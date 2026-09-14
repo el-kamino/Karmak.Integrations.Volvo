@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action>http://www.starstandards.org/webservices/2005/10/transport/bindings/starTransportPortTypes/ProcessMessageResponse</wsa:Action>
+        <wsa:RelatesTo>XXXXXXXXXXXXXXX</wsa:RelatesTo>
+    </soapenv:Header>
+    <soapenv:Body wsu:Id="Id-e6d79dcf-d2fd-44a6-a661-40e1cdbd56a9" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <soapenv:Fault>
+            <faultcode>soapenv:Server</faultcode>
+            <faultstring>Feb 11, 2020 03:23:00 PM - Exception occurred while formatting response No enum const class org.starstandard.star._5.codelists.LanguageEnumeratedType.EN-US</faultstring>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,6 @@
+@Integrations.Api_HostAddress = http://localhost:5071
+
+POST {{Integrations.Api_HostAddress}}/DownloadFiles/download
+Accept: application/json
+
+###

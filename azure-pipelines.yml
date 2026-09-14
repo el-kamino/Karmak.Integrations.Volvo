@@ -1,0 +1,55 @@
+trigger:
+  branches:
+    include:
+    - main
+    - volvo_dev
+pr:
+- main
+- volvo_dev
+jobs:
+- job: Build
+  displayName: Build
+  timeoutInMinutes: 120
+  cancelTimeoutInMinutes: 1
+  pool:
+    name: Azure Pipelines
+  steps:
+  - checkout: self
+    fetchTags: false
+  - task: UseDotNet@2
+    displayName: Use .NET Core 10.0
+    inputs:
+      version: 10.x
+  - task: NuGetAuthenticate@1
+  - task: DotNetCoreCLI@2
+    displayName: dotnet restore 
+    inputs:
+      command: restore
+      projects: Karmak.Integrations.Volvo.sln
+      selectOrConfig: config
+      nugetConfigPath: nuget.config
+  - task: DotNetCoreCLI@2
+    displayName: dotnet build
+    inputs:
+      command: build
+      projects: Karmak.Integrations.Volvo.sln
+      arguments: --no-restore --configuration Release
+  - task: DotNetCoreCLI@2
+    displayName: dotnet test
+    inputs:
+      command: test
+      projects: src/**/*Tests.csproj
+      arguments: --no-build --configuration Release
+  - task: DotNetCoreCLI@2
+    displayName: dotnet publish
+    inputs:
+      command: publish
+      projects: src/Karmak.Integrations.Volvo.Api/Karmak.Integrations.Volvo.Api.csproj
+      arguments: --no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/VolvoApi
+      publishWebProjects: false
+      zipAfterPublish: true
+  - task: PublishPipelineArtifact@1
+    displayName: Publish VolvoApi Artifact
+    inputs:
+      targetPath: $(Build.ArtifactStagingDirectory)/VolvoApi
+      artifactName: VolvoApi

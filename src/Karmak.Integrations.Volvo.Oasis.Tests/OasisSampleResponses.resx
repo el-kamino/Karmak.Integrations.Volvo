@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CompleteVehicleResponse" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;GOASIS xmlns='http://volvo.com/goasis'&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;EN&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;EN&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;VEHICLE-INFO-LIT&gt;Vehicle Information&lt;/VEHICLE-INFO-LIT&gt;
+   &lt;VEHICLE-INQUIRY&gt;
+      &lt;VEH-ID-NBR&gt;1FAHP2EW7AG122568&lt;/VEH-ID-NBR&gt;
+      &lt;VEH-INQ-DATE&gt;20140723&lt;/VEH-INQ-DATE&gt;
+      &lt;VEH-INQ-TIME&gt;112655&lt;/VEH-INQ-TIME&gt;
+   &lt;/VEHICLE-INQUIRY&gt;
+   &lt;VEH-BODY-DESC&gt;
+      &lt;VEH-DESC-LIT&gt;VEHICLE DESCRIPTION&lt;/VEH-DESC-LIT&gt;
+      &lt;VEH-DESC&gt;2010 TAURUS&lt;/VEH-DESC&gt;
+      &lt;VEH-BODY-LIT&gt;BODY STYLE&lt;/VEH-BODY-LIT&gt;
+      &lt;VEH-BODY&gt;4 DOOR SEDAN-6 LITE&lt;/VEH-BODY&gt;
+   &lt;/VEH-BODY-DESC&gt;
+   &lt;VEH-OPT-DESC&gt;
+      &lt;VEH-ENG-LIT&gt;ENGINE&lt;/VEH-ENG-LIT&gt;
+      &lt;VEH-ENG-DESC&gt;3.5L 4V DOHC VCT SMPI V6 Gas&lt;/VEH-ENG-DESC&gt;
+      &lt;VEH-ENG-CALIB&gt;APH1FT0A&lt;/VEH-ENG-CALIB&gt;
+      &lt;VEH-ENG-CALIB-LIT&gt;ENGINE CALIBRATION&lt;/VEH-ENG-CALIB-LIT&gt;
+      &lt;VEH-TRANS-LIT&gt;TRANSMISSION&lt;/VEH-TRANS-LIT&gt;
+      &lt;VEH-TRANS-DESC&gt;6 Speed Auto Transmission 6F50&lt;/VEH-TRANS-DESC&gt;
+      &lt;VEH-AXLE-LIT&gt;AXLE CODE&lt;/VEH-AXLE-LIT&gt;
+      &lt;VEH-AXLE-CODE&gt;1A&lt;/VEH-AXLE-CODE&gt;
+   &lt;/VEH-OPT-DESC&gt;
+   &lt;AXLE-RATIO-MSG&gt;
+      &lt;AXLE-RATIO-LIT&gt;AXLE RATIO&lt;/AXLE-RATIO-LIT&gt;
+      &lt;AXLE-RATIO-DESC&gt;2.77 FINAL DRIVE RATIO&lt;/AXLE-RATIO-DESC&gt;
+   &lt;/AXLE-RATIO-MSG&gt;
+   &lt;WHEEL-BASE-MSG&gt;
+      &lt;WHEEL-BASE-LIT&gt;WHEEL BASE&lt;/WHEEL-BASE-LIT&gt;
+      &lt;WHEEL-BASE-DESC /&gt;
+   &lt;/WHEEL-BASE-MSG&gt;
+   &lt;WHEELSIZE-MSG&gt;
+      &lt;WHEELSIZE-LIT&gt;WHEEL SIZE&lt;/WHEELSIZE-LIT&gt;
+      &lt;WHEELSIZE-DESC&gt;18X7.5' PAINTED ALUMINUM WHEEL&lt;/WHEELSIZE-DESC&gt;
+   &lt;/WHEELSIZE-MSG&gt;
+   &lt;FRONT-TIRE-MSG&gt;
+      &lt;FRONT-TIRE-LIT&gt;TIRE&lt;/FRONT-TIRE-LIT&gt;
+      &lt;FRONT-TIRE-DESC&gt;P235/55R18 99T&lt;/FRONT-TIRE-DESC&gt;
+   &lt;/FRONT-TIRE-MSG&gt;
+   &lt;PAINT-DESC-MSG&gt;
+      &lt;PAINT-LIT&gt;PAINT COLOR&lt;/PAINT-LIT&gt;
+      &lt;PAINT-DESC&gt;GOLD LEAF&lt;/PAINT-DESC&gt;
+      &lt;PAINTCODE-LIT&gt;PAINT CODE&lt;/PAINTCODE-LIT&gt;
+      &lt;PAINTCODE&gt;UP&lt;/PAINTCODE&gt;
+   &lt;/PAINT-DESC-MSG&gt;
+   &lt;RADIO-MSG&gt;
+      &lt;RADIO-LIT&gt;RADIO&lt;/RADIO-LIT&gt;
+      &lt;RADIO-DESC&gt;ELETR PREM AM/FM STRO/DISC/CLK&lt;/RADIO-DESC&gt;
+   &lt;/RADIO-MSG&gt;
+   &lt;GVW-MSG&gt;
+      &lt;GVW-LIT&gt;GROSS VEHICLE WEIGHT&lt;/GVW-LIT&gt;
+      &lt;GVW-DESC&gt;5260 LB. GVW&lt;/GVW-DESC&gt;
+   &lt;/GVW-MSG&gt;
+    &lt;WERS-VLINE-MSG&gt;
+      &lt;WERS-VLINE-CODE-LIT&gt;WERS VEHICLE LINE&lt;/WERS-VLINE-CODE-LIT&gt;
+      &lt;WERS-VLINE-CODE&gt;TM2&lt;/WERS-VLINE-CODE&gt;
+      &lt;WERS-VLINE-DESC&gt;Escape&lt;/WERS-VLINE-DESC&gt;
+   &lt;/WERS-VLINE-MSG&gt;
+   &lt;GOASIS-VLINE-MSG&gt;
+      &lt;VLINE-CODE-LIT&gt;GOASIS VEHICLE LINE&lt;/VLINE-CODE-LIT&gt;
+      &lt;GOASIS-VLINE-CODE&gt;00117&lt;/GOASIS-VLINE-CODE&gt;
+   &lt;/GOASIS-VLINE-MSG&gt;
+   &lt;LOCAL-BODYSTYLE-MSG&gt;
+      &lt;BSTYLE-CODE-LIT&gt;SAVE LOCAL BODYSTYLE&lt;/BSTYLE-CODE-LIT&gt;
+      &lt;LOCAL-BODYSTYLE-CODE&gt;P2E&lt;/LOCAL-BODYSTYLE-CODE&gt;
+   &lt;/LOCAL-BODYSTYLE-MSG&gt;
+   &lt;WERS-BODYSTYLE-MSG&gt;
+      &lt;WBSTYLE-CODE-LIT&gt;WERS BODYSTYLE&lt;/WBSTYLE-CODE-LIT&gt;
+      &lt;WERS-BODYSTYLE-CODE&gt;WE&lt;/WERS-BODYSTYLE-CODE&gt;
+      &lt;WBSTYLE-DESC&gt;5 Door&lt;/WBSTYLE-DESC&gt;
+   &lt;/WERS-BODYSTYLE-MSG&gt;
+   &lt;GOASIS-BODYSTYLE-MSG&gt;
+      &lt;GBSTYLE-CODE-LIT&gt;GOASIS BODYSTYLE&lt;/GBSTYLE-CODE-LIT&gt;
+      &lt;GOASIS-BODYSTYLE-CODE&gt;00760&lt;/GOASIS-BODYSTYLE-CODE&gt;
+   &lt;/GOASIS-BODYSTYLE-MSG&gt;
+   &lt;DRIVE-CODE-MSG&gt;
+      &lt;DRIVE-CODE-LIT&gt;DRIVE CODE:&lt;/DRIVE-CODE-LIT&gt;
+      &lt;DRIVE-CODE&gt;10&lt;/DRIVE-CODE&gt;
+   &lt;/DRIVE-CODE-MSG&gt;
+   &lt;VER-SERIES-MSG&gt;
+      &lt;VER-SERIES-LIT&gt;VER SERIES:&lt;/VER-SERIES-LIT&gt;
+      &lt;VER-SERIES&gt;11&lt;/VER-SERIES&gt;
+   &lt;/VER-SERIES-MSG&gt;
+   &lt;WERS-PLANT-MSG&gt;
+      &lt;WERS-PLANT-CODE-LIT&gt;WERS PLANT&lt;/WERS-PLANT-CODE-LIT&gt;
+      &lt;WERS-PLANT-CODE&gt;AN&lt;/WERS-PLANT-CODE&gt;
+      &lt;WERS-PLANT-DESC&gt;LOUISVILLE PLANT BUILD&lt;/WERS-PLANT-DESC&gt;
+   &lt;/WERS-PLANT-MSG&gt;
+   &lt;GOASIS-PLANT-MSG&gt;
+      &lt;PLANT-CODE-LIT&gt;GOASIS PLANT&lt;/PLANT-CODE-LIT&gt;
+      &lt;GOASIS-PLANT-CODE&gt;0008&lt;/GOASIS-PLANT-CODE&gt;
+      &lt;PLANT-DESC&gt;CHICAGO&lt;/PLANT-DESC&gt;
+   &lt;/GOASIS-PLANT-MSG&gt;
+   &lt;GOASIS-SAVESRC-MSG&gt;
+      &lt;GOASIS-SAVESRC-LIT&gt;SAVE SOURCE&lt;/GOASIS-SAVESRC-LIT&gt;
+      &lt;GOASIS-SAVESRC-CODE&gt;NA&lt;/GOASIS-SAVESRC-CODE&gt;
+   &lt;/GOASIS-SAVESRC-MSG&gt;
+   &lt;GOASIS-SELLING-MSG&gt;
+      &lt;GOASIS-SELLING-LIT&gt;SELLING COUNTRY&lt;/GOASIS-SELLING-LIT&gt;
+      &lt;GOASIS-SELLING-COUNTRY&gt;USA&lt;/GOASIS-SELLING-COUNTRY&gt;
+   &lt;/GOASIS-SELLING-MSG&gt;
+   &lt;GOASIS-WSI-MSG&gt;
+      &lt;GOASIS-WSI-LIT&gt;WSI&lt;/GOASIS-WSI-LIT&gt;
+      &lt;GOASIS-WSI-CODE&gt;T1&lt;/GOASIS-WSI-CODE&gt;
+   &lt;/GOASIS-WSI-MSG&gt;
+   &lt;VEH-DESC-GOASIS&gt;2010 TAURUS&lt;/VEH-DESC-GOASIS&gt;
+   &lt;VEH-BODY-DESC-GOASIS&gt;SEL FWD&lt;/VEH-BODY-DESC-GOASIS&gt;
+   &lt;VEH-ENG-DESC-GOASIS&gt;3.5L DOHC 4V V6&lt;/VEH-ENG-DESC-GOASIS&gt;
+   &lt;VEH-TRANS-DESC-GOASIS&gt;6 SPEED AUTO 6F&lt;/VEH-TRANS-DESC-GOASIS&gt;
+   &lt;GOASIS-VERSION-40 /&gt;
+   &lt;SAVEFIELDS&gt;
+      &lt;SALES-MODEL-YEAR&gt;13&lt;/SALES-MODEL-YEAR&gt;
+      &lt;MFR-MODEL-YEAR&gt;12&lt;/MFR-MODEL-YEAR&gt;
+      &lt;MFR-BRAND&gt;F&lt;/MFR-BRAND&gt;
+   &lt;/SAVEFIELDS&gt;
+   &lt;VEHICLE-DESCRIPTION&gt;
+      &lt;PRODUCT-TYPE&gt;C&lt;/PRODUCT-TYPE&gt;
+      &lt;MODEL-YEAR&gt;2010&lt;/MODEL-YEAR&gt;
+   &lt;/VEHICLE-DESCRIPTION&gt;
+   &lt;VEH-LINE FAMILY='VL' FEATURE='PH'&gt;TAURUS&lt;/VEH-LINE&gt;
+   &lt;VEH-SERIES FAMILY = 'VS' FEATURE='KE'&gt;SEL (SAFE HAVEN) VERSION&lt;/VEH-SERIES&gt;
+   &lt;BODY-CAB FAMILY = 'BS' FEATURE='FC'&gt;4 DOOR SEDAN-6 LITE&lt;/BODY-CAB&gt;
+   &lt;ENGINE FAMILY = 'EN' FEATURE='N5'&gt;3.5L 4V DOHC VCT SMPI V6 GAS&lt;/ENGINE&gt;
+   &lt;TRANSMISSION FAMILY = 'TR' FEATURE= 'WJ' IND= 'A' &gt;6 SPD AUTO TRANS 6F&lt;/TRANSMISSION&gt;
+   &lt;EMISSION FAMILY = 'DGA' FEATURE= 'AB' CD= 'FDJ6' &gt;49 STATE/NON GREEN STATE REQ.&lt;/EMISSION&gt;
+   &lt;DRIVE FAMILY = 'DR' FEATURE= 'A' &gt;2 WHL L/H FRONT DRIVE&lt;/DRIVE&gt;
+   &lt;AXLE FAMILY = 'EGA' FEATURE= 'AM' &gt;2.77 FINAL DRIVE RATIO&lt;/AXLE&gt;
+   &lt;AIR-CONDITIONING FAMILY = 'AC' FEATURE= 'K' &gt;ELECTRONIC DUAL ZONE ATC A/C&lt;/AIR-CONDITIONING&gt;
+   &lt;TIRE FAMILY = 'D3H' FEATURE= 'C6' &gt;P235/55R18 99T&lt;/TIRE&gt;
+   &lt;MFG-LOCAL-ATTRIBUTES&gt;
+      &lt;ASSEMBLY-PLANT&gt;LOU&lt;/ASSEMBLY-PLANT&gt;
+   &lt;/MFG-LOCAL-ATTRIBUTES&gt;
+   &lt;MISC-ATTRIBUTES&gt;
+      &lt;ENGINE-FUEL-TYPE&gt;U&lt;/ENGINE-FUEL-TYPE&gt;
+   &lt;/MISC-ATTRIBUTES&gt;
+   &lt;VEHICLE-ORDER&gt;
+      &lt;VEH-SOLD-IN&gt;XYZ&lt;/VEH-SOLD-IN&gt;
+      &lt;VEH-PROD-DATE&gt;10-31-2018&lt;/VEH-PROD-DATE&gt;
+      &lt;VEH-RELEASE-DATE&gt;10-31-2019&lt;/VEH-RELEASE-DATE&gt;
+   &lt;/VEHICLE-ORDER&gt;
+   &lt;FEATURES-COUNT&gt;1&lt;/FEATURES-COUNT&gt;
+   &lt;FEATURES&gt;
+      &lt;FEATURE-INFO FAMILY = 'D2A' FEATURE= 'AC' &gt;DUAL REAR WHEELS&lt;/FEATURE-INFO&gt;
+   &lt;/FEATURES&gt;
+   &lt;OWS-ORDER-DIV&gt;1&lt;/OWS-ORDER-DIV&gt;
+   &lt;OWS-SELL-DATE&gt;20091105&lt;/OWS-SELL-DATE&gt;
+   &lt;OWS-STRP-STATE&gt;MI&lt;/OWS-STRP-STATE&gt;
+     &lt;OWS-SELL-DEALER /&gt;
+   &lt;OWS-VEH-LINE&gt;CPH&lt;/OWS-VEH-LINE&gt;
+     &lt;OWS-VEH-ENG&gt;W&lt;/OWS-VEH-ENG&gt;
+     &lt;OWS-DEMO-DATE&gt;00000000&lt;/OWS-DEMO-DATE&gt;
+   &lt;OWS-ORDER-DATE&gt;20090922&lt;/OWS-ORDER-DATE&gt;
+   &lt;OWS-GVW-NBR&gt;05260&lt;/OWS-GVW-NBR&gt;
+   &lt;OWS-CAR-AREA-REG&gt;2&lt;/OWS-CAR-AREA-REG&gt;
+   &lt;OWS-HTRK-AREA-REG&gt;9&lt;/OWS-HTRK-AREA-REG&gt;
+   &lt;OWS-PUBLIC-SERVICE /&gt;
+   &lt;OWS-VECI-SUFFIX&gt;TBX&lt;/OWS-VECI-SUFFIX&gt;
+     &lt;OWS-DELIVERY-TYP /&gt;
+   &lt;OWS-CONVOY-ARV-DATE&gt;20091019&lt;/OWS-CONVOY-ARV-DATE&gt;
+   &lt;GOASIS-WERS-MULTI-BYTE&gt;
+      &lt;WERS-MB-VL&gt;Escape&lt;/WERS-MB-VL&gt;
+      &lt;WERS-MB-BY&gt;5 Door&lt;/WERS-MB-BY&gt;
+      &lt;WERS-MB-EN&gt;3.5L 4V DOHC VCT SMPI V6 Gas&lt;/WERS-MB-EN&gt;
+      &lt;WERS-MB-TR&gt;6 Speed Auto Transmission 6F50&lt;/WERS-MB-TR&gt;
+      &lt;WERS-MB-PA&gt;Gold Leaf&lt;/WERS-MB-PA&gt;
+      &lt;WERS-MB-RA&gt;Elect Prem AM/FM Stro/Disc/Clock&lt;/WERS-MB-RA&gt;
+        &lt;WERS-MB-AX&gt;2.77 Ratio&lt;/WERS-MB-AX&gt;
+        &lt;WERS-MB-WH&gt;18 X 7.5' Painted Aluminum Wheel&lt;/WERS-MB-WH&gt;
+      &lt;WERS-MB-TI&gt;P235/55R18 99T&lt;/WERS-MB-TI&gt;
+        &lt;WERS-MB-GV&gt;5260 LB. GVW&lt;/WERS-MB-GV&gt;
+     &lt;/GOASIS-WERS-MULTI-BYTE&gt;
+   &lt;GOASIS-SYNC-VER-MSG&gt;
+      &lt;SYNC-VER-INFO-LIT&gt;SYNC VERSION&lt;/SYNC-VER-INFO-LIT&gt;
+      &lt;SYNC-VER-INFO-DATA&gt;V3 Gen1&lt;/SYNC-VER-INFO-DATA&gt;
+   &lt;/GOASIS-SYNC-VER-MSG&gt;
+   &lt;GOASIS-SYNC-VHR-MSG&gt;
+      &lt;SYNC-VHR-INFO-LIT&gt;VHR ACTIVATED&lt;/SYNC-VHR-INFO-LIT&gt;
+      &lt;SYNC-VHR-INFO-DATA&gt;Y&lt;/SYNC-VHR-INFO-DATA&gt;
+     &lt;/GOASIS-SYNC-VHR-MSG&gt;
+   &lt;VEH-BASIC-WARR-INFO&gt;
+      &lt;VEH-BASIC-WARR-LIT&gt;GENERAL WARRANTY INFORMATION&lt;/VEH-BASIC-WARR-LIT&gt;
+        &lt;START-DATE-LIT&gt;WARRANTY START DATE&lt;/START-DATE-LIT&gt;
+        &lt;VEH-WARR-START-DATE&gt;20091105&lt;/VEH-WARR-START-DATE&gt;
+      &lt;BUILD-DATE-LIT&gt;BUILD DATE&lt;/BUILD-DATE-LIT&gt;
+      &lt;VEH-BLD-DATE&gt;20091013&lt;/VEH-BLD-DATE&gt;
+      &lt;START-ODOM-LIT&gt;SALE MILEAGE&lt;/START-ODOM-LIT&gt;
+      &lt;VEH-WARR-START-MLG&gt;00159&lt;/VEH-WARR-START-MLG&gt;
+   &lt;/VEH-BASIC-WARR-INFO&gt;
+   &lt;CAMPAIGN-MESSAGES&gt;
+      &lt;CAMP-HEADER-LIT&gt;OUTSTANDING FIELD SERVICE ACTIONS&lt;/CAMP-HEADER-LIT&gt;
+      &lt;CAMP-MESSAGE&gt;
+         &lt;VEH-CAMP&gt;
+            &lt;CAMP-NBR-LIT&gt;NUMBER&lt;/CAMP-NBR-LIT&gt;
+              &lt;CAMP-NBR&gt;14S08&lt;/CAMP-NBR&gt;
+           &lt;/VEH-CAMP&gt;
+         &lt;VEH-CAMP-MSG-TEXT&gt;
+            &lt;CAMP-TEXT-LINE&gt;LICENSE LAMP ASSEMBLY REPLACEMENT&lt;/CAMP-TEXT-LINE&gt;
+         &lt;/VEH-CAMP-MSG-TEXT&gt;
+      &lt;/CAMP-MESSAGE&gt;
+   &lt;/CAMPAIGN-MESSAGES&gt;
+   &lt;ARN-MESSAGE&gt;
+      &lt;ARN-MESSAGE-LIT&gt;ACCURATE REPAIR NOTIFICATIONS&lt;/ARN-MESSAGE-LIT&gt;
+        &lt;ARN-HEADER-TEXT&gt;ATTENTION TECHNICIANS AND SERVICE MANAGERS:&lt;/ARN-HEADER-TEXT&gt;
+      &lt;ARN-MESSAGE-TEXT&gt;BEFORE REPLACING 6.0L CYLINDER HEAD GASKETS REFER TO&lt;/ARN-MESSAGE-TEXT&gt;
+      &lt;ARN-MESSAGE-NBR&gt;09-08-03&lt;/ARN-MESSAGE-NBR&gt;
+      &lt;ARN-MESSAGE-TEXT&gt;DON'T REPLACE A FICM ASSEMBLY WITHOUT FIRST REFERENCING&lt;/ARN-MESSAGE-TEXT&gt;
+      &lt;ARN-MESSAGE-NBR&gt;10-12-06&lt;/ARN-MESSAGE-NBR&gt;
+      &lt;ARN-MESSAGE-TEXT&gt;TO ENSURE OPTIMUM COOLING SYSTEM PERFORMANCE, REFER TO&lt;/ARN-MESSAGE-TEXT&gt;
+      &lt;ARN-MESSAGE-NBR&gt;09-08-05&lt;/ARN-MESSAGE-NBR&gt;
+   &lt;/ARN-MESSAGE&gt;
+   &lt;FOM-MESSAGE&gt;
+      &lt;FOM-HEADER-LIT&gt;CUSTOMER INFO FOR FOM&lt;/FOM-HEADER-LIT&gt;
+      &lt;FOM-SYS-MSG&gt;NO FOM INFO FOUND&lt;/FOM-SYS-MSG&gt;
+   &lt;/FOM-MESSAGE&gt;
+   &lt;VEH-WARRANTY-MESSAGES&gt;
+      &lt;VEH-WARR-HEADER-LIT&gt;WARNING MESSAGES&lt;/VEH-WARR-HEADER-LIT&gt;
+      &lt;VEH-WARR-MSG TYPE = 'W'&gt;BODY AND PAINT WARRANTY MAY NOT APPLY, CONTACT 800-667-0088 TO VERIFY&lt;/VEH-WARR-MSG&gt;
+      &lt;VEH-WARR-MSG TYPE = 'W'&gt;VERIFY VIN/WARRANTY COVERAGE&lt;/VEH-WARR-MSG&gt;
+      &lt;VEH-WARR-MSG TYPE = 'W'&gt;VEHICLE SOLD IN CANADA&lt;/VEH-WARR-MSG&gt;
+        &lt;VEH-WARR-MSG TYPE = 'W'&gt;SERVICE INFO MAY BE UNAVAILABLE&lt;/VEH-WARR-MSG&gt;
+   &lt;/VEH-WARRANTY-MESSAGES&gt;
+&lt;VEH-WARRANTY-COVERAGE&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Bumper-to-Bumper&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;This is:&amp;lt;br/&amp;gt;a) test1.&amp;lt;/br&amp;gt; b) test2&amp;lt;/br&amp;gt;c) tada.&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;This is:&amp;lt;br/&amp;gt;a) test1.&amp;lt;/br&amp;gt; b) test2&amp;lt;/br&amp;gt;c) tada.&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Corrosion Perforation&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years/ Unlimited miles&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Powertrain&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years / 60,000 Miles (whichever occurs first)&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Safety Restraint&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years / 60,000 Miles (whichever occurs first)&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+   &lt;/VEH-WARRANTY-COVERAGE&gt;
+   &lt;VEH-ESP-INFO&gt;
+      &lt;EXT-SERV-PLAN-LIT&gt;EXTENDED COVERAGES&lt;/EXT-SERV-PLAN-LIT&gt;
+      &lt;VEH-ESP-DETAIL system='GOASIS'&gt;
+         &lt;VEH-ESP-DESC-MSG&gt;
+            &lt;VEH-ESP-CODE&gt;0968&lt;/VEH-ESP-CODE&gt;
+            &lt;VEH-ESP-DESC&gt;USA 2010 NEW 84/100000 PREMIUMCARE W/ROADSIDE&lt;/VEH-ESP-DESC&gt;
+           &lt;/VEH-ESP-DESC-MSG&gt;
+         &lt;VEH-ESP-DEDUCT-LIT&gt;STANDARD DEDUCTIBLE:&lt;/VEH-ESP-DEDUCT-LIT&gt;
+         &lt;VEH-ESP-DEDUCT&gt;100 USD DISAPPEARING DEDUCTIBLE&lt;/VEH-ESP-DEDUCT&gt;
+           &lt;VEH-ESP-OWNER-LIT&gt;OWNER NAME:&lt;/VEH-ESP-OWNER-LIT&gt;
+         &lt;VEH-ESP-OWNER&gt;MARSHA SAAFIR&lt;/VEH-ESP-OWNER&gt;
+         &lt;VEH-ESP-OPTIONS-LIT&gt;OPTIONS:&lt;/VEH-ESP-OPTIONS-LIT&gt;
+         &lt;VEH-ESP-OPTIONS&gt;DIS.,DEDNT&lt;/VEH-ESP-OPTIONS&gt;
+           &lt;VEH-ESP-EXP-DATE-LIT&gt;EXPIRATION DATE:&lt;/VEH-ESP-EXP-DATE-LIT&gt;
+         &lt;VEH-ESP-EXP-DATE&gt;11/05/2016&lt;/VEH-ESP-EXP-DATE&gt;
+         &lt;VEH-ESP-DIST-LIT&gt;DISTANCE:&lt;/VEH-ESP-DIST-LIT&gt;
+         &lt;VEH-ESP-DIST&gt;100000&lt;/VEH-ESP-DIST&gt;
+         &lt;VEH-ESP-RENT-LIT&gt;RENTAL:&lt;/VEH-ESP-RENT-LIT&gt;
+         &lt;VEH-ESP-RENT&gt;30 UP TO 10 DAYS&lt;/VEH-ESP-RENT&gt;
+           &lt;VEH-ESP-TOWING-LIT&gt;TOWING:&lt;/VEH-ESP-TOWING-LIT&gt;
+         &lt;VEH-ESP-TOWING&gt;0 USD&lt;/VEH-ESP-TOWING&gt;
+           &lt;VEH-ESP-SELLER-LIT&gt;CONTRACT SOLD BY:&lt;/VEH-ESP-SELLER-LIT&gt;
+         &lt;VEH-ESP-SELLER&gt;
+            &lt;VEH-ESP-SELLER-GSA&gt;USA&lt;/VEH-ESP-SELLER-GSA&gt;
+              &lt;VEH-ESP-SELLER-PA&gt;02737&lt;/VEH-ESP-SELLER-PA&gt;
+            &lt;VEH-ESP-SELLER-SUB /&gt;
+         &lt;/VEH-ESP-SELLER&gt;
+         &lt;VEH-ESP-QFC-MSG&gt;
+            &lt;VEH-ESP-QFC-LINE&gt;TEST QFC MESSAGE LINE&lt;/VEH-ESP-QFC-LINE&gt;
+         &lt;/VEH-ESP-QFC-MSG&gt;
+         &lt;VEH-ESP-DET-MSG&gt;ESP CONTRACT START DATE: 11/05/2009&lt;/VEH-ESP-DET-MSG&gt;
+         &lt;VEH-ESP-DET-MSG&gt;OWNER OF VEHICLE MUST MATCH OWNER NAME ON OASIS FOR COVERAGE TO APPLY.&lt;/VEH-ESP-DET-MSG&gt;
+         &lt;VEH-ESP-DET-MSG&gt;DISAPPEARING DEDUCTIBLE.&lt;/VEH-ESP-DET-MSG&gt;
+      &lt;/VEH-ESP-DETAIL&gt;
+   &lt;/VEH-ESP-INFO&gt;
+   &lt;ESP-PART-INFO&gt;
+      &lt;ESP-PART-HDR-LIT&gt;EXTENDED SERVICE PLAN PART HEADER:&lt;/ESP-PART-HDR-LIT&gt;
+      &lt;ESP-PART-VERIF&gt;
+         &lt;ESP-PART-NBR-LIT&gt;EXTENDED SERVICE PLAN PART NUMBER:&lt;/ESP-PART-NBR-LIT&gt;
+         &lt;ESP-PART-NBR&gt;ABCD1234&lt;/ESP-PART-NBR&gt;
+         &lt;ESP-PART-DESC&gt;TEST DESCRIPTION&lt;/ESP-PART-DESC&gt;
+         &lt;ESP-PART-MSG&gt;TEST MESSAGE&lt;/ESP-PART-MSG&gt;
+         &lt;ESP-SPEC-PART-MSG&gt;TEST SPEC MESSAGE&lt;/ESP-SPEC-PART-MSG&gt;
+      &lt;/ESP-PART-VERIF&gt;
+   &lt;/ESP-PART-INFO&gt;
+   &lt;SOLD-TO-FLEET-LIT&gt;SOLD TO FLEET&lt;/SOLD-TO-FLEET-LIT&gt;
+   &lt;SOLD-TO-FLEET&gt;NO&lt;/SOLD-TO-FLEET&gt;
+   &lt;RETAIL-SALE-TYPE-LIT&gt;RETAIL SALES TYPE&lt;/RETAIL-SALE-TYPE-LIT&gt;
+   &lt;RETAIL-SALE-TYPE&gt;L&lt;/RETAIL-SALE-TYPE&gt;
+   &lt;VEH-REP-HIST&gt;
+      &lt;VEH-REP-HIST-LIT&gt;WARRANTY REPAIR HISTORY&lt;/VEH-REP-HIST-LIT&gt;
+      &lt;VEH-REP-HIST-MSG&gt;NO RECENT REPAIR HISTORY ON VEHICLE&lt;/VEH-REP-HIST-MSG&gt;
+      &lt;PART-NBR-LIT&gt;PART NUMBER:&lt;/PART-NBR-LIT&gt;
+      &lt;PART-DESC-LIT&gt;PART DESCRIPTION:&lt;/PART-DESC-LIT&gt;
+      &lt;QUANTITY-LIT&gt;QUANTITY:&lt;/QUANTITY-LIT&gt;
+      &lt;LABOR-OP-LIT&gt;LABOR OPERATION:&lt;/LABOR-OP-LIT&gt;
+      &lt;COND-CODE-LIT&gt;CONDITION CODE:&lt;/COND-CODE-LIT&gt;
+      &lt;COND-DESC-LIT&gt;CONDITION CODE DESCRIPTION:&lt;/COND-DESC-LIT&gt;
+      &lt;VEH-REP&gt;
+         &lt;VEH-REP-HIST-CLAIM&gt;
+            &lt;DLR-NAME&gt;LEE SMITH&lt;/DLR-NAME&gt;
+            &lt;REP-DATE&gt;20191031&lt;/REP-DATE&gt;
+            &lt;REP-ORD-NBR&gt;ABC123&lt;/REP-ORD-NBR&gt;
+            &lt;REP-ORD-MLG&gt;123456&lt;/REP-ORD-MLG&gt;
+            &lt;REP-ORD-MLG-IND&gt;M&lt;/REP-ORD-MLG-IND&gt;
+            &lt;VEH-REP-HIST-CMNT&gt;TEST COMMENT&lt;/VEH-REP-HIST-CMNT&gt;
+            &lt;VEH-REP-HIST-PART-LBR&gt;
+               &lt;PART-NBR&gt;TEST1234&lt;/PART-NBR&gt;
+               &lt;PART-DESC&gt;TEST DESCRIPTION&lt;/PART-DESC&gt;
+               &lt;PART-QNTY&gt;20&lt;/PART-QNTY&gt;
+               &lt;LABOR-OP&gt;TEST OP&lt;/LABOR-OP&gt;
+               &lt;COND-CODE&gt;99&lt;/COND-CODE&gt;
+               &lt;COND-CODE-DESC&gt;TEST CONDITION DESCRIPTION&lt;/COND-CODE-DESC&gt;
+               &lt;DEALER-LIT&gt;DEALER:&lt;/DEALER-LIT&gt;
+               &lt;REPAIR-DATE-LIT&gt;REPAIR DATE:&lt;/REPAIR-DATE-LIT&gt;
+               &lt;WARR-CLAIM-NBR-LIT&gt;WARRANTY CLAIM NUMBER:&lt;/WARR-CLAIM-NBR-LIT&gt;
+               &lt;ODOMETER-LIT&gt;ODOMETER:&lt;/ODOMETER-LIT&gt;
+            &lt;/VEH-REP-HIST-PART-LBR&gt;
+         &lt;/VEH-REP-HIST-CLAIM&gt;
+      &lt;/VEH-REP&gt;
+   &lt;/VEH-REP-HIST&gt;
+   &lt;SYMP-CODE-MESSAGES&gt;
+      &lt;VEH-SYMP-CODE-LIT&gt;SYMPTOM CODE INFORMATION&lt;/VEH-SYMP-CODE-LIT&gt;
+        &lt;SSM-HEADER-LIT&gt;SPECIAL SERVICE MESSAGES&lt;/SSM-HEADER-LIT&gt;
+        &lt;TSB-HEADER-LIT&gt;TECHNICAL SERVICE BULLETINS&lt;/TSB-HEADER-LIT&gt;
+        &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;101000&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;BODY SEATING&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-NBR-MSG&gt;
+               &lt;SSM-NUMBER&gt;44531&lt;/SSM-NUMBER&gt;
+               &lt;SSM-WEIGHT /&gt;
+               &lt;SSM-ACTIVE-LITERAL&gt;EFFECTIVE DATE:&lt;/SSM-ACTIVE-LITERAL&gt;
+               &lt;SSM-ACTIVE-DATE&gt;
+                  &lt;SSM-ACTIVE-YEAR&gt;2014&lt;/SSM-ACTIVE-YEAR&gt;
+                  &lt;SSM-ACTIVE-MONTH&gt;05&lt;/SSM-ACTIVE-MONTH&gt;
+                  &lt;SSM-ACTIVE-DAY&gt;02&lt;/SSM-ACTIVE-DAY&gt;
+               &lt;/SSM-ACTIVE-DATE&gt;
+            &lt;/VEH-SSM-NBR-MSG&gt;
+            &lt;SSM-MSG-TITLE&gt;
+               &lt;SSM-TITLE-LINE&gt;2009-2014 F-150/Taurus/Flex/MKT/MKS, 2010-2015 F-Super Duty, 2011-2014 Explorer&lt;/SSM-TITLE-LINE&gt;
+                 &lt;SSM-TITLE-LINE&gt;Power Seat Track Binding/Seized, Grind, Squeal, Popping Noise Moving Forward or&lt;/SSM-TITLE-LINE&gt;
+                 &lt;SSM-TITLE-LINE&gt;Rearward.&lt;/SSM-TITLE-LINE&gt;
+            &lt;/SSM-MSG-TITLE&gt;
+            &lt;SSM-MSG-TEXT&gt;
+               &lt;SSM-TEXT-LINE&gt;Some 2009-2014 F-150/Taurus/Flex/MKT/MKS, 2010-2015 F-Super Duty, 2011-2014 Expl&lt;/SSM-TEXT-LINE&gt;
+                 &lt;SSM-TEXT-LINE&gt;orer vehicles may experience binding, grinding, squealing and/or popping noise w&lt;/SSM-TEXT-LINE&gt;
+               &lt;SSM-TEXT-LINE&gt;hen the seat is moved forward or rearward. Service inventories have been updated&lt;/SSM-TEXT-LINE&gt;
+                 &lt;SSM-TEXT-LINE&gt;with revised seat motor/bracket kits(14547), for lower service part replacement&lt;/SSM-TEXT-LINE&gt;
+               &lt;SSM-TEXT-LINE&gt;procedure.Follow the On-line Workshop Manual (WSM) section 501-10 for diagnosi&lt;/SSM-TEXT-LINE&gt;
+                 &lt;SSM-TEXT-LINE&gt;s and replacement procedures and use available service labor operations.&lt;/SSM-TEXT-LINE&gt;
+            &lt;/SSM-MSG-TEXT&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-NBR-MSG&gt;
+               &lt;TSB-NUMBER&gt;12-09-02&lt;/TSB-NUMBER&gt;
+               &lt;TSB-WEIGHT /&gt;
+               &lt;TSB-ACTIVE-LITERAL&gt;EFFECTIVE DATE:&lt;/TSB-ACTIVE-LITERAL&gt;
+               &lt;TSB-ACTIVE-DATE&gt;
+                  &lt;TSB-ACTIVE-YEAR&gt;2012&lt;/TSB-ACTIVE-YEAR&gt;
+                  &lt;TSB-ACTIVE-MONTH&gt;09&lt;/TSB-ACTIVE-MONTH&gt;
+                  &lt;TSB-ACTIVE-DAY&gt;10&lt;/TSB-ACTIVE-DAY&gt;
+               &lt;/TSB-ACTIVE-DATE&gt;
+            &lt;/VEH-TSB-NBR-MSG&gt;
+            &lt;TSB-MSG-TITLE&gt;
+               &lt;TSB-TITLE-LINE&gt;DIRT ACCUMULATION ON REAR DOOR SCUFF PLATES&lt;/TSB-TITLE-LINE&gt;
+              &lt;/TSB-MSG-TITLE&gt;
+            &lt;TSB-MSG-TEXT&gt;
+               &lt;TSB-TEXT-LINE&gt;SOME 2010-2013 TAURUS VEHICLES MAY EXHIBIT ROAD DUST ACCUMULATION ON THE REAR&lt;/TSB-TEXT-LINE&gt;
+               &lt;TSB-TEXT-LINE&gt;DOOR SCUFF PLATE AREA. FOLLOW THE SERVICE PROCEDURE STEPS TO CORRECT THE&lt;/TSB-TEXT-LINE&gt;
+               &lt;TSB-TEXT-LINE&gt;CONDITION.&lt;/TSB-TEXT-LINE&gt;
+            &lt;/TSB-MSG-TEXT&gt;
+         &lt;/TSB-MESSAGE&gt;
+         &lt;FBM-MESSAGE&gt;
+            &lt;VEH-FBM-SYS-MSG&gt;FEEDBACK SYSTEM MESSAGE&lt;/VEH-FBM-SYS-MSG&gt;
+            &lt;VEH-FBM-NBR-MSG&gt;
+               &lt;FBM-NUMBER&gt;10-31-2019&lt;/FBM-NUMBER&gt;
+               &lt;FBM-ACTIVE-LITERAL&gt;ACTIVE DATE:&lt;/FBM-ACTIVE-LITERAL&gt;
+               &lt;FBM-ACTIVE-DATE&gt;
+                  &lt;FBM-ACTIVE-YEAR&gt;2019&lt;/FBM-ACTIVE-YEAR&gt;
+                  &lt;FBM-ACTIVE-MONTH&gt;10&lt;/FBM-ACTIVE-MONTH&gt;
+                  &lt;FBM-ACTIVE-DAY&gt;31&lt;/FBM-ACTIVE-DAY&gt;
+               &lt;/FBM-ACTIVE-DATE&gt;
+            &lt;/VEH-FBM-NBR-MSG&gt;
+            &lt;FBM-MSG-TITLE&gt;
+               &lt;FBM-TITLE-LINE&gt;TEST TITLE LINE&lt;/FBM-TITLE-LINE&gt;
+              &lt;/FBM-MSG-TITLE&gt;
+            &lt;FBM-MSG-TEXT&gt;
+               &lt;FBM-TEXT-LINE&gt;TEST TEXT LINE&lt;/FBM-TEXT-LINE&gt;
+            &lt;/FBM-MSG-TEXT&gt;
+         &lt;/FBM-MESSAGE&gt;
+         &lt;GSB-HEADER-LIT&gt;GENERAL SERVICE BULLETIN&lt;/GSB-HEADER-LIT&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;13-22222&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;F150 / Expedition King Ranch Seat Cover Damage Vs. Defect Determination&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;This General Service Bulliten is intended to be used to help dealers determine w&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;arranty / non-warranty claims for the King Ranch Seat Covers.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000091&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Multiple Vehicles- Glass Panel Build Date Decoder General Service Bulletin (GSB)&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;Multiple Vehicles - Use this document to assist your dealership in determining b&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;uild dates of glass panels.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;CONTACT-ID-MSG&gt;*311 265 516* TECH HOTLINE CONTACT ID EXPIRES IN 5 DAYS FOR 1FAHP2EW7AG122568&lt;/CONTACT-ID-MSG&gt;
+     &lt;/SYMP-CODE-MESSAGES&gt;
+   &lt;VEH-OAR-MESSAGE&gt;
+      &lt;VEH-OAR-HEADER-LIT&gt;MARKETING MESSAGES&lt;/VEH-OAR-HEADER-LIT&gt;
+      &lt;OAR-MESSAGE-1-TEXT&gt;OWNER ADVANTAGE REWARDS:&lt;/OAR-MESSAGE-1-TEXT&gt;
+      &lt;OAR-MESSAGE-2-TEXT&gt;VIN HAS BEEN ASSOCIATED WITH AN OAR ACCOUNT AT THIS DEALERSHIP.&lt;/OAR-MESSAGE-2-TEXT&gt;
+      &lt;OAR-MSG-ACC-DET-TEXT&gt;VISIT OA TRACKER TO VERIFY MEMBER AND SEE COMPLETE DETAILS.&lt;/OAR-MSG-ACC-DET-TEXT&gt;
+      &lt;OAR-MSG-ACC-NUM-TEXT&gt;OA MEMBER#:&lt;/OAR-MSG-ACC-NUM-TEXT&gt;
+      &lt;OAR-MSG-ACC-NUM-LIT&gt;151963291&lt;/OAR-MSG-ACC-NUM-LIT&gt;
+      &lt;OAR-MSG-ASDATE-TEXT&gt;REWARDS BALANCES AS-OF-DATE:&lt;/OAR-MSG-ASDATE-TEXT&gt;
+      &lt;OAR-MSG-ASDATE-LIT&gt;07/18/2014&lt;/OAR-MSG-ASDATE-LIT&gt;
+      &lt;OAR-MSG-SVCBAL-TEXT&gt;SERVICE BALANCE:&lt;/OAR-MSG-SVCBAL-TEXT&gt;
+      &lt;OAR-MSG-SVCBAL-LIT&gt;$12.36&lt;/OAR-MSG-SVCBAL-LIT&gt;
+      &lt;OAR-MSG-OILCHG-TEXT&gt;DEALER OIL CHANGE BALANCE:&lt;/OAR-MSG-OILCHG-TEXT&gt;
+      &lt;OAR-MSG-OILCHG-LIT&gt;2&lt;/OAR-MSG-OILCHG-LIT&gt;
+      &lt;OAR-MSG-SALBAL-TEXT&gt;DEALER SALES BALANCE:&lt;/OAR-MSG-SALBAL-TEXT&gt;
+      &lt;OAR-MSG-SALBAL-LIT&gt;$0.00&lt;/OAR-MSG-SALBAL-LIT&gt;
+   &lt;/VEH-OAR-MESSAGE&gt;
+   &lt;VIN-STATUS-INFO&gt;
+      &lt;VIN-STATUS-LIT&gt;VIN STATUS:&lt;/VIN-STATUS-LIT&gt;
+      &lt;VIN-STATUS-MSG&gt;TEST VIN STATUS MESSAGE&lt;/VIN-STATUS-MSG&gt;
+   &lt;/VIN-STATUS-INFO&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+  &lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithCampNumberInBcmTextLine" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;9200&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2019-12-04&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;2018-2019 F-150 - 5.0L - Metallic Grinding/Rattling Sound From The Transmission&lt;/BCM-TITLE-LINE&gt;
+            &lt;BCM-TITLE-LINE&gt;Bellhousing Area - Built On Or Before 12-Feb-2019&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;See TSB: 19-2358 for details.&lt;/BCM-TEXT-LINE&gt;
+            &lt;BCM-TEXT-LINE&gt;
+               &lt;CAMP-NBR&gt;19-2358&lt;/CAMP-NBR&gt;
+            &lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithGsbNumberInBcmTextLine" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;9200&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2019-12-04&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;2018-2019 F-150 - 5.0L - Metallic Grinding/Rattling Sound From The Transmission&lt;/BCM-TITLE-LINE&gt;
+            &lt;BCM-TITLE-LINE&gt;Bellhousing Area - Built On Or Before 12-Feb-2019&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;See GSB: 19-2358 for details.&lt;/BCM-TEXT-LINE&gt;
+            &lt;BCM-TEXT-LINE&gt;
+               &lt;VEH-GSB-NBR-MSG&gt;19-2358&lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithMultipleVehEspDetailBlocks" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+    &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+    &lt;DLR-LANG-RESP&gt;
+        &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+        &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+        &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+        &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+        &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+        &lt;LANG-RESP-MSG&gt;&lt;/LANG-RESP-MSG&gt;
+    &lt;/DLR-LANG-RESP&gt;
+    &lt;VEHICLE-INFO-LIT&gt;Vehicle Information&lt;/VEHICLE-INFO-LIT&gt;
+    &lt;VEHICLE-INQUIRY&gt;
+        &lt;VEH-ID-NBR&gt;1FAHP2KT6AG103603&lt;/VEH-ID-NBR&gt;
+        &lt;VEH-INQ-DATE&gt;20191122&lt;/VEH-INQ-DATE&gt;
+        &lt;VEH-INQ-TIME&gt;140125&lt;/VEH-INQ-TIME&gt;
+    &lt;/VEHICLE-INQUIRY&gt;
+    &lt;VEH-BODY-DESC&gt;
+        &lt;VEH-DESC-LIT&gt;VEHICLE DESCRIPTION&lt;/VEH-DESC-LIT&gt;
+        &lt;VEH-DESC&gt;2010 Taurus&lt;/VEH-DESC&gt;
+        &lt;VEH-BODY-LIT&gt;BODY STYLE&lt;/VEH-BODY-LIT&gt;
+        &lt;VEH-BODY&gt;&lt;/VEH-BODY&gt;
+    &lt;/VEH-BODY-DESC&gt;
+    &lt;VEH-OPT-DESC&gt;
+        &lt;VEH-ENG-LIT&gt;ENGINE&lt;/VEH-ENG-LIT&gt;
+        &lt;VEH-ENG-DESC&gt;&lt;/VEH-ENG-DESC&gt;
+        &lt;VEH-ENG-CALIB&gt;ALE1GT0A&lt;/VEH-ENG-CALIB&gt;
+        &lt;VEH-ENG-CALIB-LIT&gt;ENGINE CALIBRATION&lt;/VEH-ENG-CALIB-LIT&gt;
+        &lt;VEH-TRANS-LIT&gt;TRANSMISSION&lt;/VEH-TRANS-LIT&gt;
+        &lt;VEH-TRANS-DESC&gt;&lt;/VEH-TRANS-DESC&gt;
+        &lt;VEH-AXLE-LIT&gt;AXLE CODE&lt;/VEH-AXLE-LIT&gt;
+        &lt;VEH-AXLE-CODE&gt;1A&lt;/VEH-AXLE-CODE&gt;
+    &lt;/VEH-OPT-DESC&gt;
+    &lt;AXLE-RATIO-MSG&gt;
+        &lt;AXLE-RATIO-LIT&gt;AXLE RATIO&lt;/AXLE-RATIO-LIT&gt;
+        &lt;AXLE-RATIO-DESC&gt;&lt;/AXLE-RATIO-DESC&gt;
+    &lt;/AXLE-RATIO-MSG&gt;
+    &lt;WHEEL-BASE-MSG&gt;
+        &lt;WHEEL-BASE-LIT&gt;WHEEL BASE&lt;/WHEEL-BASE-LIT&gt;
+        &lt;WHEEL-BASE-DESC&gt;&lt;/WHEEL-BASE-DESC&gt;
+    &lt;/WHEEL-BASE-MSG&gt;
+    &lt;WHEELSIZE-MSG&gt;
+        &lt;WHEELSIZE-LIT&gt;WHEEL SIZE&lt;/WHEELSIZE-LIT&gt;
+        &lt;WHEELSIZE-DESC&gt;&lt;/WHEELSIZE-DESC&gt;
+    &lt;/WHEELSIZE-MSG&gt;
+    &lt;FRONT-TIRE-MSG&gt;
+        &lt;FRONT-TIRE-LIT&gt;FRONT TIRE&lt;/FRONT-TIRE-LIT&gt;
+        &lt;FRONT-TIRE-DESC&gt;&lt;/FRONT-TIRE-DESC&gt;
+    &lt;/FRONT-TIRE-MSG&gt;
+    &lt;PAINT-DESC-MSG&gt;
+        &lt;PAINT-LIT&gt;PAINT COLOR&lt;/PAINT-LIT&gt;
+        &lt;PAINT-DESC&gt;&lt;/PAINT-DESC&gt;
+        &lt;PAINTCODE-LIT&gt;PAINT CODE&lt;/PAINTCODE-LIT&gt;
+        &lt;PAINTCODE&gt;UH&lt;/PAINTCODE&gt;
+    &lt;/PAINT-DESC-MSG&gt;
+    &lt;RADIO-MSG&gt;
+        &lt;RADIO-LIT&gt;RADIO&lt;/RADIO-LIT&gt;
+        &lt;RADIO-DESC&gt;&lt;/RADIO-DESC&gt;
+    &lt;/RADIO-MSG&gt;
+    &lt;GVW-MSG&gt;
+        &lt;GVW-LIT&gt;GROSS VEHICLE WEIGHT&lt;/GVW-LIT&gt;
+        &lt;GVW-DESC&gt;&lt;/GVW-DESC&gt;
+    &lt;/GVW-MSG&gt;
+    &lt;WERS-VLINE-MSG&gt;
+        &lt;WERS-VLINE-CODE-LIT&gt;WERS VEHICLE LINE&lt;/WERS-VLINE-CODE-LIT&gt;
+        &lt;WERS-VLINE-CODE&gt;CPH&lt;/WERS-VLINE-CODE&gt;
+        &lt;WERS-VLINE-DESC&gt;Taurus&lt;/WERS-VLINE-DESC&gt;
+    &lt;/WERS-VLINE-MSG&gt;
+    &lt;GOASIS-VLINE-MSG&gt;
+        &lt;VLINE-CODE-LIT&gt;GOASIS VEHICLE LINE&lt;/VLINE-CODE-LIT&gt;
+        &lt;GOASIS-VLINE-CODE&gt;&lt;/GOASIS-VLINE-CODE&gt;
+    &lt;/GOASIS-VLINE-MSG&gt;
+    &lt;LOCAL-BODYSTYLE-MSG&gt;
+        &lt;BSTYLE-CODE-LIT&gt;SAVE LOCAL BODYSTYLE&lt;/BSTYLE-CODE-LIT&gt;
+        &lt;LOCAL-BODYSTYLE-CODE&gt;P2K&lt;/LOCAL-BODYSTYLE-CODE&gt;
+    &lt;/LOCAL-BODYSTYLE-MSG&gt;
+    &lt;GOASIS-BODYSTYLE-MSG&gt;
+        &lt;GBSTYLE-CODE-LIT&gt;GOASIS BODYSTYLE&lt;/GBSTYLE-CODE-LIT&gt;
+        &lt;GOASIS-BODYSTYLE-CODE&gt;00845&lt;/GOASIS-BODYSTYLE-CODE&gt;
+    &lt;/GOASIS-BODYSTYLE-MSG&gt;
+    &lt;GOASIS-PLANT-MSG&gt;
+        &lt;PLANT-CODE-LIT&gt;GOASIS PLANT&lt;/PLANT-CODE-LIT&gt;
+        &lt;GOASIS-PLANT-CODE&gt;0008&lt;/GOASIS-PLANT-CODE&gt;
+        &lt;PLANT-DESC&gt;CHICAGO&lt;/PLANT-DESC&gt;
+    &lt;/GOASIS-PLANT-MSG&gt;
+    &lt;GOASIS-SAVESRC-MSG&gt;
+        &lt;GOASIS-SAVESRC-LIT&gt;SAVE SOURCE&lt;/GOASIS-SAVESRC-LIT&gt;
+        &lt;GOASIS-SAVESRC-CODE&gt;NA&lt;/GOASIS-SAVESRC-CODE&gt;
+    &lt;/GOASIS-SAVESRC-MSG&gt;
+    &lt;GOASIS-SELLING-MSG&gt;
+        &lt;GOASIS-SELLING-LIT&gt;SELLING COUNTRY&lt;/GOASIS-SELLING-LIT&gt;
+        &lt;GOASIS-SELLING-COUNTRY&gt;USA&lt;/GOASIS-SELLING-COUNTRY&gt;
+    &lt;/GOASIS-SELLING-MSG&gt;
+    &lt;GOASIS-WSI-MSG&gt;
+        &lt;GOASIS-WSI-LIT&gt;WSI&lt;/GOASIS-WSI-LIT&gt;
+        &lt;GOASIS-WSI-CODE&gt;&lt;/GOASIS-WSI-CODE&gt;
+    &lt;/GOASIS-WSI-MSG&gt;
+    &lt;VEH-DESC-GOASIS&gt;2010 Taurus&lt;/VEH-DESC-GOASIS&gt;
+    &lt;VEH-BODY-DESC-GOASIS&gt;&lt;/VEH-BODY-DESC-GOASIS&gt;
+    &lt;VEH-ENG-DESC-GOASIS&gt;&lt;/VEH-ENG-DESC-GOASIS&gt;
+    &lt;VEH-TRANS-DESC-GOASIS&gt;&lt;/VEH-TRANS-DESC-GOASIS&gt;
+    &lt;VEHICLE-DESCRIPTION&gt;
+        &lt;PRODUCT-TYPE&gt;C&lt;/PRODUCT-TYPE&gt;
+        &lt;MODEL-YEAR&gt;2010&lt;/MODEL-YEAR&gt;
+    &lt;/VEHICLE-DESCRIPTION&gt;
+    &lt;VEH-LINE FAMILY="VL" FEATURE="PH"&gt;Taurus&lt;/VEH-LINE&gt;
+    &lt;VEH-SERIES FAMILY="" FEATURE=""&gt;&lt;/VEH-SERIES&gt;
+    &lt;BODY-CAB FAMILY="" FEATURE=""&gt;&lt;/BODY-CAB&gt;
+    &lt;ENGINE FAMILY="" FEATURE=""&gt;&lt;/ENGINE&gt;
+    &lt;TRANSMISSION FAMILY="" FEATURE="" IND=""&gt;&lt;/TRANSMISSION&gt;
+    &lt;EMISSION FAMILY="" FEATURE="" CD="DJC5"&gt;&lt;/EMISSION&gt;
+    &lt;DRIVE FAMILY="" FEATURE=""&gt;&lt;/DRIVE&gt;
+    &lt;AXLE FAMILY="" FEATURE=""&gt;&lt;/AXLE&gt;
+    &lt;AIR-CONDITIONING FAMILY="" FEATURE=""&gt;&lt;/AIR-CONDITIONING&gt;
+    &lt;TIRE FAMILY="" FEATURE=""&gt;&lt;/TIRE&gt;
+    &lt;FEATURES&gt;&lt;/FEATURES&gt;
+    &lt;OWS-ORDER-DIV&gt;1&lt;/OWS-ORDER-DIV&gt;
+    &lt;OWS-SELL-DATE&gt;20090807&lt;/OWS-SELL-DATE&gt;
+    &lt;OWS-STRP-STATE&gt;MI&lt;/OWS-STRP-STATE&gt;
+    &lt;OWS-SELL-DEALER&gt;&lt;/OWS-SELL-DEALER&gt;
+    &lt;OWS-VEH-LINE&gt;CPH&lt;/OWS-VEH-LINE&gt;
+    &lt;OWS-VEH-ENG&gt;T&lt;/OWS-VEH-ENG&gt;
+    &lt;OWS-DEMO-DATE&gt;00000000&lt;/OWS-DEMO-DATE&gt;
+    &lt;OWS-ORDER-DATE&gt;20090601&lt;/OWS-ORDER-DATE&gt;
+    &lt;OWS-GVW-NBR&gt;00000&lt;/OWS-GVW-NBR&gt;
+    &lt;OWS-CAR-AREA-REG&gt;&lt;/OWS-CAR-AREA-REG&gt;
+    &lt;OWS-HTRK-AREA-REG&gt;9&lt;/OWS-HTRK-AREA-REG&gt;
+    &lt;OWS-PUBLIC-SERVICE&gt;&lt;/OWS-PUBLIC-SERVICE&gt;
+    &lt;OWS-VECI-SUFFIX&gt;THJ&lt;/OWS-VECI-SUFFIX&gt;
+    &lt;OWS-DELIVERY-TYP&gt;&lt;/OWS-DELIVERY-TYP&gt;
+    &lt;OWS-CONVOY-ARV-DATE&gt;20090730&lt;/OWS-CONVOY-ARV-DATE&gt;
+    &lt;GOASIS-WERS-MULTI-BYTE&gt;
+        &lt;WERS-MB-VL&gt;Taurus&lt;/WERS-MB-VL&gt;
+        &lt;WERS-MB-BY&gt;&lt;/WERS-MB-BY&gt;
+        &lt;WERS-MB-EN&gt;&lt;/WERS-MB-EN&gt;
+        &lt;WERS-MB-TR&gt;&lt;/WERS-MB-TR&gt;
+        &lt;WERS-MB-PA&gt;&lt;/WERS-MB-PA&gt;
+        &lt;WERS-MB-RA&gt;&lt;/WERS-MB-RA&gt;
+        &lt;WERS-MB-AX&gt;&lt;/WERS-MB-AX&gt;
+        &lt;WERS-MB-WH&gt;&lt;/WERS-MB-WH&gt;
+        &lt;WERS-MB-TI&gt;&lt;/WERS-MB-TI&gt;
+        &lt;WERS-MB-GV&gt;&lt;/WERS-MB-GV&gt;
+    &lt;/GOASIS-WERS-MULTI-BYTE&gt;
+    &lt;VEH-BASIC-WARR-INFO&gt;
+        &lt;VEH-BASIC-WARR-LIT&gt;GENERAL WARRANTY INFORMATION&lt;/VEH-BASIC-WARR-LIT&gt;
+        &lt;START-DATE-LIT&gt;WARRANTY START DATE&lt;/START-DATE-LIT&gt;
+        &lt;VEH-WARR-START-DATE&gt;20090807&lt;/VEH-WARR-START-DATE&gt;
+        &lt;BUILD-DATE-LIT&gt;BUILD DATE&lt;/BUILD-DATE-LIT&gt;
+        &lt;VEH-BLD-DATE&gt;20090721&lt;/VEH-BLD-DATE&gt;
+        &lt;START-ODOM-LIT&gt;SALE MILEAGE&lt;/START-ODOM-LIT&gt;
+        &lt;VEH-WARR-START-MLG&gt;&lt;/VEH-WARR-START-MLG&gt;
+    &lt;/VEH-BASIC-WARR-INFO&gt;
+    &lt;CAMPAIGN-MESSAGES&gt;
+        &lt;CAMP-HEADER-LIT&gt;OUTSTANDING FIELD SERVICE ACTIONS&lt;/CAMP-HEADER-LIT&gt;
+        &lt;VEH-CAMP-SYS-MSG&gt;  NO CAMPAIGN MESSAGE(S) FOUND&lt;/VEH-CAMP-SYS-MSG&gt;
+    &lt;/CAMPAIGN-MESSAGES&gt;
+    &lt;ARN-MESSAGE&gt;
+        &lt;ARN-MESSAGE-LIT&gt;ACCURATE REPAIR NOTIFICATIONS&lt;/ARN-MESSAGE-LIT&gt;
+        &lt;ARN-MESSAGE-TEXT&gt;NO ARN MESSAGES FOUND&lt;/ARN-MESSAGE-TEXT&gt;
+    &lt;/ARN-MESSAGE&gt;
+    &lt;FOM-MESSAGE&gt;
+        &lt;FOM-HEADER-LIT&gt;CUSTOMER INFO FOR FOM&lt;/FOM-HEADER-LIT&gt;
+        &lt;FOM-SYS-MSG&gt;NO FOM INFO FOUND&lt;/FOM-SYS-MSG&gt;
+    &lt;/FOM-MESSAGE&gt;
+    &lt;VEH-WARRANTY-MESSAGES&gt;
+        &lt;VEH-WARR-HEADER-LIT&gt;NO WARNING MESSAGES FOUND FOR THIS VIN&lt;/VEH-WARR-HEADER-LIT&gt;
+    &lt;/VEH-WARRANTY-MESSAGES&gt;
+    &lt;VEH-ESP-INFO&gt;
+        &lt;EXT-SERV-PLAN-LIT&gt;EXTENDED COVERAGES&lt;/EXT-SERV-PLAN-LIT&gt;
+        &lt;VEH-ESP-DETAIL system="GOASIS"&gt;
+            &lt;VEH-ESP-DESC-MSG&gt;
+                &lt;VEH-ESP-CODE&gt;0968&lt;/VEH-ESP-CODE&gt;
+                &lt;VEH-ESP-DESC&gt;EXPIRED&lt;/VEH-ESP-DESC&gt;
+            &lt;/VEH-ESP-DESC-MSG&gt;
+            &lt;VEH-ESP-DEDUCT-LIT&gt;STANDARD DEDUCTIBLE:&lt;/VEH-ESP-DEDUCT-LIT&gt;
+            &lt;VEH-ESP-DEDUCT&gt;   100 USD&lt;/VEH-ESP-DEDUCT&gt;
+            &lt;VEH-ESP-OWNER-LIT&gt;OWNER NAME:&lt;/VEH-ESP-OWNER-LIT&gt;
+            &lt;VEH-ESP-OWNER&gt;BJARKI DOG&lt;/VEH-ESP-OWNER&gt;
+            &lt;VEH-ESP-OPTIONS-LIT&gt;OPTIONS:&lt;/VEH-ESP-OPTIONS-LIT&gt;
+            &lt;VEH-ESP-OPTIONS&gt;&lt;/VEH-ESP-OPTIONS&gt;
+            &lt;VEH-ESP-EXP-DATE-LIT&gt;EXPIRATION DATE:&lt;/VEH-ESP-EXP-DATE-LIT&gt;
+            &lt;VEH-ESP-EXP-DATE&gt;08/07/2014&lt;/VEH-ESP-EXP-DATE&gt;
+            &lt;VEH-ESP-DIST-LIT&gt;DISTANCE:&lt;/VEH-ESP-DIST-LIT&gt;
+            &lt;VEH-ESP-DIST&gt; 60000&lt;/VEH-ESP-DIST&gt;
+            &lt;VEH-ESP-RENT-LIT&gt;RENTAL:&lt;/VEH-ESP-RENT-LIT&gt;
+            &lt;VEH-ESP-RENT&gt;   30      UP TO       10 DAYS&lt;/VEH-ESP-RENT&gt;
+            &lt;VEH-ESP-TOWING-LIT&gt;TOWING:&lt;/VEH-ESP-TOWING-LIT&gt;
+            &lt;VEH-ESP-TOWING&gt;    0  USD&lt;/VEH-ESP-TOWING&gt;
+            &lt;VEH-ESP-SELLER-LIT&gt;CONTRACT SOLD BY:&lt;/VEH-ESP-SELLER-LIT&gt;
+            &lt;VEH-ESP-SELLER&gt;
+                &lt;VEH-ESP-SELLER-GSA&gt;USA&lt;/VEH-ESP-SELLER-GSA&gt;
+                &lt;VEH-ESP-SELLER-PA&gt;09630&lt;/VEH-ESP-SELLER-PA&gt;
+                &lt;VEH-ESP-SELLER-SUB&gt;&lt;/VEH-ESP-SELLER-SUB&gt;
+            &lt;/VEH-ESP-SELLER&gt;
+            &lt;VEH-ESP-DET-MSG&gt;ESP CONTRACT START DATE:  02/01/2010&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt;OWNER OF VEHICLE MUST MATCH OWNER NAME ON OASIS FOR COVERAGE TO APPLY&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt;IS NOT COVERED ON ACTIVE CONTRACT(S)&lt;/VEH-ESP-DET-MSG&gt;
+        &lt;/VEH-ESP-DETAIL&gt;
+        &lt;EXT-SERV-PLAN-LIT&gt;QUALITY FLEET CARE PROGRAM&lt;/EXT-SERV-PLAN-LIT&gt;
+        &lt;VEH-ESP-DETAIL system="GOASIS"&gt;
+            &lt;VEH-ESP-DESC-MSG&gt;
+                &lt;VEH-ESP-CODE&gt;0799&lt;/VEH-ESP-CODE&gt;
+                &lt;VEH-ESP-DESC&gt;USA 2010 NEW QUALITY FLEET CARE ONLY&lt;/VEH-ESP-DESC&gt;
+            &lt;/VEH-ESP-DESC-MSG&gt;
+            &lt;VEH-ESP-DEDUCT-LIT&gt;STANDARD DEDUCTIBLE:&lt;/VEH-ESP-DEDUCT-LIT&gt;
+            &lt;VEH-ESP-DEDUCT&gt;     0 USD&lt;/VEH-ESP-DEDUCT&gt;
+            &lt;VEH-ESP-OWNER-LIT&gt;OWNER NAME:&lt;/VEH-ESP-OWNER-LIT&gt;
+            &lt;VEH-ESP-OWNER&gt;INDUSTRIAL PARTS DEPOT INC&lt;/VEH-ESP-OWNER&gt;
+            &lt;VEH-ESP-OPTIONS-LIT&gt;OPTIONS:&lt;/VEH-ESP-OPTIONS-LIT&gt;
+            &lt;VEH-ESP-OPTIONS&gt;&lt;/VEH-ESP-OPTIONS&gt;
+            &lt;VEH-ESP-EXP-DATE-LIT&gt;EXPIRATION DATE:&lt;/VEH-ESP-EXP-DATE-LIT&gt;
+            &lt;VEH-ESP-EXP-DATE&gt;08/07/2029&lt;/VEH-ESP-EXP-DATE&gt;
+            &lt;VEH-ESP-DIST-LIT&gt;DISTANCE:&lt;/VEH-ESP-DIST-LIT&gt;
+            &lt;VEH-ESP-DIST&gt;999999&lt;/VEH-ESP-DIST&gt;
+            &lt;VEH-ESP-RENT-LIT&gt;RENTAL:&lt;/VEH-ESP-RENT-LIT&gt;
+            &lt;VEH-ESP-RENT&gt;    0      UP TO        0 DAYS&lt;/VEH-ESP-RENT&gt;
+            &lt;VEH-ESP-TOWING-LIT&gt;TOWING:&lt;/VEH-ESP-TOWING-LIT&gt;
+            &lt;VEH-ESP-TOWING&gt;    0  USD&lt;/VEH-ESP-TOWING&gt;
+            &lt;VEH-ESP-SELLER-LIT&gt;CONTRACT SOLD BY:&lt;/VEH-ESP-SELLER-LIT&gt;
+            &lt;VEH-ESP-SELLER&gt;
+                &lt;VEH-ESP-SELLER-GSA&gt;USA&lt;/VEH-ESP-SELLER-GSA&gt;
+                &lt;VEH-ESP-SELLER-PA&gt;09630&lt;/VEH-ESP-SELLER-PA&gt;
+                &lt;VEH-ESP-SELLER-SUB&gt;&lt;/VEH-ESP-SELLER-SUB&gt;
+            &lt;/VEH-ESP-SELLER&gt;
+            &lt;VEH-ESP-DET-MSG&gt;ESP CONTRACT START DATE:  08/07/2009&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt;CONTRACT SIGNATURE DATE:  10/04/2010.&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt;THIS UNIT ENROLLED IN VOLVO FLEET CARE&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; PROGRAM TO BE USED FOR CONSOLIDATED BILLING OF:&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; CUSTOMER PAY REPAIR AND&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; MAINTENANCE SERVICES,&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; WARRANTY AND ESP DEDUCTIBLES,&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; RENTAL CHARGES BEYOND ESP COVERAGE AND&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; TOWING. RETAIL REPAIR LAWS AND REQUIREMENTS APPLY.&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; DO NOT PROVIDE WARRANTY/ZERO DOLLAR R.O. COPY   TO CUSTOMER&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; WHEN REPAIRS EXCEED      $0&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; CONTACT: C ASHTON  FOR AUTHORIZATION&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; AT: 310-530-1900&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; SUBMIT FOR PAYMENT THROUGH ACESII/OWS CLAIM. NO DEALER FEES ARE APPLIED&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt;. CLAIM ENTRY INSTRUCTIONS/JOB AIDS AVAILABLE AT: WWW.FLEETCARE.VOLVO.COM&lt;/VEH-ESP-DET-MSG&gt;
+            &lt;VEH-ESP-DET-MSG&gt; FOR ASSISTANCE CALL:  800-367-3221&lt;/VEH-ESP-DET-MSG&gt;
+        &lt;/VEH-ESP-DETAIL&gt;
+    &lt;/VEH-ESP-INFO&gt;
+    &lt;SOLD-TO-FLEET-LIT&gt;SOLD TO FLEET&lt;/SOLD-TO-FLEET-LIT&gt;
+    &lt;SOLD-TO-FLEET&gt;NO&lt;/SOLD-TO-FLEET&gt;
+    &lt;RETAIL-SALE-TYPE-LIT&gt;RETAIL SALES TYPE&lt;/RETAIL-SALE-TYPE-LIT&gt;
+    &lt;RETAIL-SALE-TYPE&gt;R&lt;/RETAIL-SALE-TYPE&gt;
+    &lt;VEH-REP-HIST&gt;
+        &lt;VEH-REP-HIST-LIT&gt;WARRANTY REPAIR HISTORY&lt;/VEH-REP-HIST-LIT&gt;
+        &lt;VEH-REP-HIST-MSG&gt;NO RECENT REPAIR HISTORY ON VEHICLE&lt;/VEH-REP-HIST-MSG&gt;
+    &lt;/VEH-REP-HIST&gt;
+    &lt;SYMP-CODE-MESSAGES&gt;
+        &lt;VEH-SYMP-CODE-LIT&gt;SYMPTOM CODE INFORMATION&lt;/VEH-SYMP-CODE-LIT&gt;
+        &lt;SSM-HEADER-LIT&gt;SPECIAL SERVICE MESSAGES&lt;/SSM-HEADER-LIT&gt;
+        &lt;TSB-HEADER-LIT&gt;TECHNICAL SERVICE BULLETINS&lt;/TSB-HEADER-LIT&gt;
+        &lt;VEH-SYMP-CODE&gt;
+            &lt;VEH-SYMP-CODE-NBR&gt;******&lt;/VEH-SYMP-CODE-NBR&gt;
+            &lt;VEH-SYMP-CODE-DESC&gt;General Information&lt;/VEH-SYMP-CODE-DESC&gt;
+            &lt;SSM-MESSAGE&gt;
+                &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+            &lt;/SSM-MESSAGE&gt;
+            &lt;TSB-MESSAGE&gt;
+                &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+            &lt;/TSB-MESSAGE&gt;
+        &lt;/VEH-SYMP-CODE&gt;
+        &lt;VEH-SYMP-CODE&gt;
+            &lt;VEH-SYMP-CODE-NBR&gt;103000&lt;/VEH-SYMP-CODE-NBR&gt;
+            &lt;VEH-SYMP-CODE-DESC&gt;BODY MIRRORS&lt;/VEH-SYMP-CODE-DESC&gt;
+            &lt;SSM-MESSAGE&gt;
+                &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+            &lt;/SSM-MESSAGE&gt;
+            &lt;TSB-MESSAGE&gt;
+                &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+            &lt;/TSB-MESSAGE&gt;
+            &lt;GSB-HEADER-LIT&gt;GENERAL SERVICE BULLETIN&lt;/GSB-HEADER-LIT&gt;
+            &lt;GSB-MESSAGE&gt;
+                &lt;VEH-GSB-NBR-MSG&gt;
+                    &lt;GSB-NUMBER&gt;G0000092&lt;/GSB-NUMBER&gt;
+                &lt;/VEH-GSB-NBR-MSG&gt;
+                &lt;GSB-MSG-TITLE&gt;
+                    &lt;GSB-TITLE-LINE&gt;Multiple Vehicles- Exterior Mirror General Service Bulletin (GSB)&lt;/GSB-TITLE-LINE&gt;
+                &lt;/GSB-MSG-TITLE&gt;
+                &lt;GSB-MSG-TEXT&gt;
+                    &lt;GSB-TEXT-LINE&gt;Multiple Vehicles - Use this document to assist your dealership in determining w&lt;/GSB-TEXT-LINE&gt;
+                    &lt;GSB-TEXT-LINE&gt;arrantable/non warrantable decision regarding exterior mirrors.&lt;/GSB-TEXT-LINE&gt;
+                &lt;/GSB-MSG-TEXT&gt;
+            &lt;/GSB-MESSAGE&gt;
+        &lt;/VEH-SYMP-CODE&gt;
+        &lt;CONTACT-ID-MSG&gt;*514 012 564* TECH HOTLINE CONTACT ID EXPIRES IN 5 DAYS FOR                   1FAHP2KT6AG103603&lt;/CONTACT-ID-MSG&gt;
+    &lt;/SYMP-CODE-MESSAGES&gt;
+    &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithSsmNumberInBcmTextLine" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;9200&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2019-12-04&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;2018-2019 F-150 - 5.0L - Metallic Grinding/Rattling Sound From The Transmission&lt;/BCM-TITLE-LINE&gt;
+            &lt;BCM-TITLE-LINE&gt;Bellhousing Area - Built On Or Before 12-Feb-2019&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;See GSB: 19-2358 for details.&lt;/BCM-TEXT-LINE&gt;
+            &lt;BCM-TEXT-LINE&gt;
+               &lt;SSM-NUMBER&gt;19-2358&lt;/SSM-NUMBER&gt;
+            &lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithTsbNumberInBcmTextLine" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;9200&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2019-12-04&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;2018-2019 F-150 - 5.0L - Metallic Grinding/Rattling Sound From The Transmission&lt;/BCM-TITLE-LINE&gt;
+            &lt;BCM-TITLE-LINE&gt;Bellhousing Area - Built On Or Before 12-Feb-2019&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;See TSB: 19-2358 for details.&lt;/BCM-TEXT-LINE&gt;
+            &lt;BCM-TEXT-LINE&gt;
+               &lt;TSB-NUMBER&gt;19-2358&lt;/TSB-NUMBER&gt;
+            &lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithUnknownXml" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;GOASIS xmlns='http://volvo.com/goasis'&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;UNKNOWN-XML-TAG&gt;This is an unknown xml tag we expect to be ignored&lt;/UNKNOWN-XML-TAG&gt;
+         &lt;BCM-NBR&gt;9200&lt;/BCM-NBR&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ResponseWithVehicleSystemMessages" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+    &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+    &lt;DLR-LANG-RESP&gt;
+        &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+        &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+        &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+        &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+        &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+        &lt;LANG-RESP-MSG&gt;&lt;/LANG-RESP-MSG&gt;
+    &lt;/DLR-LANG-RESP&gt;
+    &lt;VEHICLE-INFO-LIT&gt;Vehicle Information&lt;/VEHICLE-INFO-LIT&gt;
+    &lt;VEHICLE-INQUIRY&gt;
+        &lt;VEH-ID-NBR&gt;1FTNE1EW1ADA03554&lt;/VEH-ID-NBR&gt;
+        &lt;VEH-INQ-DATE&gt;20191125&lt;/VEH-INQ-DATE&gt;
+        &lt;VEH-INQ-TIME&gt;143140&lt;/VEH-INQ-TIME&gt;
+    &lt;/VEHICLE-INQUIRY&gt;
+    &lt;VEH-SYS-MSG&gt;W A R N I N G     W A R N I N G     W A R N I N G&lt;/VEH-SYS-MSG&gt;
+    &lt;VEH-SYS-MSG&gt;YOU ENTERED:         1FTNE1EW1ADA03554 THIS VIN IS NOT FOUND&lt;/VEH-SYS-MSG&gt;
+    &lt;VEH-SYS-MSG&gt;VIN FOUND:           1FDXE4FPXADA03554&lt;/VEH-SYS-MSG&gt;
+    &lt;VEH-SYS-MSG&gt;VERIFY VIN ON VEHICLE AND TRY AGAIN&lt;/VEH-SYS-MSG&gt;
+    &lt;VEH-SYS-MSG&gt;W A R N I N G     W A R N I N G     W A R N I N G&lt;/VEH-SYS-MSG&gt;
+    &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ValidResponseWithOnlyBroadcastMessages" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;BROADCAST-MESSAGES&gt;
+      &lt;BCM-HEADER-LIT&gt;BROADCAST MESSAGES&lt;/BCM-HEADER-LIT&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;9998&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2003-02-13&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;COPYRIGHT 2010 VOLVO MOTOR COMPANY.  ALL RIGHTS RESERVED.&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;.&lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+      &lt;BCM-MESSAGE&gt;
+         &lt;BCM-TITLE-LIT&gt;*BROADCAST MESSAGE&lt;/BCM-TITLE-LIT&gt;
+         &lt;BCM-NBR&gt;5266&lt;/BCM-NBR&gt;
+         &lt;BCM-ACT-DATE&gt;2013-04-22&lt;/BCM-ACT-DATE&gt;
+         &lt;BCM-MSG-TITLE&gt;
+            &lt;BCM-TITLE-LINE&gt;2019 Various Vehicles Equipped With SYNC 3 - Various SYNC Performance Related Co&lt;/BCM-TITLE-LINE&gt;
+            &lt;BCM-TITLE-LINE&gt;ncerns&lt;/BCM-TITLE-LINE&gt;
+         &lt;/BCM-MSG-TITLE&gt;
+         &lt;BCM-MSG-TEXT&gt;
+            &lt;BCM-TEXT-LINE&gt;Some 2019 vehicles equipped with SYNC 3 may exhibit various intermittent symptom&lt;/BCM-TEXT-LINE&gt;
+            &lt;BCM-TEXT-LINE&gt;s such as a frozen unresponsive screen, a solid blue screen when moving forward&lt;/BCM-TEXT-LINE&gt;
+         &lt;/BCM-MSG-TEXT&gt;
+      &lt;/BCM-MESSAGE&gt;
+   &lt;/BROADCAST-MESSAGES&gt;
+   &lt;BROADCAST-MSG-FINAL&gt;END OF OASIS REPORT FOR BROADCAST MESSAGES&lt;/BROADCAST-MSG-FINAL&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+  <data name="ValidVehicleResponse" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;GOASIS xmlns="http://volvo.com/goasis"&gt;
+   &lt;GOASIS-RESULT-LIT&gt;OASIS RESULT:&lt;/GOASIS-RESULT-LIT&gt;
+   &lt;DLR-LANG-RESP&gt;
+      &lt;RET-LANG-CODE&gt;EN&lt;/RET-LANG-CODE&gt;
+      &lt;RET-LANG-DESC&gt;ENGLISH&lt;/RET-LANG-DESC&gt;
+      &lt;PREF-LANG-CODE&gt;EN&lt;/PREF-LANG-CODE&gt;
+      &lt;OPT-LANG-CODE-1&gt;ES&lt;/OPT-LANG-CODE-1&gt;
+      &lt;OPT-LANG-CODE-2&gt;FR&lt;/OPT-LANG-CODE-2&gt;
+      &lt;LANG-RESP-MSG /&gt;
+   &lt;/DLR-LANG-RESP&gt;
+   &lt;VEHICLE-INFO-LIT&gt;Vehicle Information&lt;/VEHICLE-INFO-LIT&gt;
+   &lt;VEHICLE-INQUIRY&gt;
+      &lt;VEH-ID-NBR&gt;1FMCU9J95DUA04123&lt;/VEH-ID-NBR&gt;
+      &lt;VEH-INQ-DATE&gt;20191025&lt;/VEH-INQ-DATE&gt;
+      &lt;VEH-INQ-TIME&gt;124619&lt;/VEH-INQ-TIME&gt;
+   &lt;/VEHICLE-INQUIRY&gt;
+   &lt;VEH-BODY-DESC&gt;
+      &lt;VEH-DESC-LIT&gt;VEHICLE DESCRIPTION&lt;/VEH-DESC-LIT&gt;
+      &lt;VEH-DESC&gt;2013 Escape&lt;/VEH-DESC&gt;
+      &lt;VEH-BODY-LIT&gt;BODY STYLE&lt;/VEH-BODY-LIT&gt;
+      &lt;VEH-BODY&gt;5 Door&lt;/VEH-BODY&gt;
+   &lt;/VEH-BODY-DESC&gt;
+   &lt;VEH-OPT-DESC&gt;
+      &lt;VEH-ENG-LIT&gt;ENGINE&lt;/VEH-ENG-LIT&gt;
+      &lt;VEH-ENG-DESC&gt;2.0L EcoBoost (240PS) - MI4&lt;/VEH-ENG-DESC&gt;
+      &lt;VEH-ENG-CALIB&gt;DM21A20A&lt;/VEH-ENG-CALIB&gt;
+      &lt;VEH-ENG-CALIB-LIT&gt;ENGINE CALIBRATION&lt;/VEH-ENG-CALIB-LIT&gt;
+      &lt;VEH-TRANS-LIT&gt;TRANSMISSION&lt;/VEH-TRANS-LIT&gt;
+      &lt;VEH-TRANS-DESC&gt;6 Speed Auto Trans 6F35&lt;/VEH-TRANS-DESC&gt;
+      &lt;VEH-AXLE-LIT&gt;AXLE CODE&lt;/VEH-AXLE-LIT&gt;
+      &lt;VEH-AXLE-CODE&gt;3A&lt;/VEH-AXLE-CODE&gt;
+   &lt;/VEH-OPT-DESC&gt;
+   &lt;AXLE-RATIO-MSG&gt;
+      &lt;AXLE-RATIO-LIT&gt;AXLE RATIO&lt;/AXLE-RATIO-LIT&gt;
+      &lt;AXLE-RATIO-DESC&gt;3.07 FINAL DRIVE RATIO&lt;/AXLE-RATIO-DESC&gt;
+   &lt;/AXLE-RATIO-MSG&gt;
+   &lt;WHEEL-BASE-MSG&gt;
+      &lt;WHEEL-BASE-LIT&gt;WHEEL BASE&lt;/WHEEL-BASE-LIT&gt;
+      &lt;WHEEL-BASE-DESC /&gt;
+   &lt;/WHEEL-BASE-MSG&gt;
+   &lt;WHEELSIZE-MSG&gt;
+      &lt;WHEELSIZE-LIT&gt;WHEEL SIZE&lt;/WHEELSIZE-LIT&gt;
+      &lt;WHEELSIZE-DESC&gt;8X19 ALLOY LR1&lt;/WHEELSIZE-DESC&gt;
+   &lt;/WHEELSIZE-MSG&gt;
+   &lt;FRONT-TIRE-MSG&gt;
+      &lt;FRONT-TIRE-LIT&gt;FRONT TIRE&lt;/FRONT-TIRE-LIT&gt;
+      &lt;FRONT-TIRE-DESC&gt;235/45 R19 95H&lt;/FRONT-TIRE-DESC&gt;
+   &lt;/FRONT-TIRE-MSG&gt;
+   &lt;PAINT-DESC-MSG&gt;
+      &lt;PAINT-LIT&gt;PAINT COLOR&lt;/PAINT-LIT&gt;
+      &lt;PAINT-DESC&gt;TUXEDO BLACK METALLIC&lt;/PAINT-DESC&gt;
+      &lt;PAINTCODE-LIT&gt;PAINT CODE&lt;/PAINTCODE-LIT&gt;
+      &lt;PAINTCODE&gt;UH&lt;/PAINTCODE&gt;
+   &lt;/PAINT-DESC-MSG&gt;
+   &lt;RADIO-MSG&gt;
+      &lt;RADIO-LIT&gt;RADIO&lt;/RADIO-LIT&gt;
+      &lt;RADIO-DESC /&gt;
+   &lt;/RADIO-MSG&gt;
+   &lt;GVW-MSG&gt;
+      &lt;GVW-LIT&gt;GROSS VEHICLE WEIGHT&lt;/GVW-LIT&gt;
+      &lt;GVW-DESC&gt;4840 LB. GVW&lt;/GVW-DESC&gt;
+   &lt;/GVW-MSG&gt;
+   &lt;WERS-VLINE-MSG&gt;
+      &lt;WERS-VLINE-CODE-LIT&gt;WERS VEHICLE LINE&lt;/WERS-VLINE-CODE-LIT&gt;
+      &lt;WERS-VLINE-CODE&gt;TM2&lt;/WERS-VLINE-CODE&gt;
+      &lt;WERS-VLINE-DESC&gt;Escape&lt;/WERS-VLINE-DESC&gt;
+   &lt;/WERS-VLINE-MSG&gt;
+   &lt;GOASIS-VLINE-MSG&gt;
+      &lt;VLINE-CODE-LIT&gt;GOASIS VEHICLE LINE&lt;/VLINE-CODE-LIT&gt;
+      &lt;GOASIS-VLINE-CODE /&gt;
+   &lt;/GOASIS-VLINE-MSG&gt;
+   &lt;LOCAL-BODYSTYLE-MSG&gt;
+      &lt;BSTYLE-CODE-LIT&gt;SAVE LOCAL BODYSTYLE&lt;/BSTYLE-CODE-LIT&gt;
+      &lt;LOCAL-BODYSTYLE-CODE&gt;U9J&lt;/LOCAL-BODYSTYLE-CODE&gt;
+   &lt;/LOCAL-BODYSTYLE-MSG&gt;
+   &lt;WERS-BODYSTYLE-MSG&gt;
+      &lt;WBSTYLE-CODE-LIT&gt;WERS BODYSTYLE&lt;/WBSTYLE-CODE-LIT&gt;
+      &lt;WERS-BODYSTYLE-CODE&gt;WE&lt;/WERS-BODYSTYLE-CODE&gt;
+      &lt;WBSTYLE-DESC&gt;5 Door&lt;/WBSTYLE-DESC&gt;
+   &lt;/WERS-BODYSTYLE-MSG&gt;
+   &lt;GOASIS-BODYSTYLE-MSG&gt;
+      &lt;GBSTYLE-CODE-LIT&gt;GOASIS BODYSTYLE&lt;/GBSTYLE-CODE-LIT&gt;
+      &lt;GOASIS-BODYSTYLE-CODE /&gt;
+   &lt;/GOASIS-BODYSTYLE-MSG&gt;
+   &lt;WERS-PLANT-MSG&gt;
+      &lt;WERS-PLANT-CODE-LIT&gt;WERS PLANT&lt;/WERS-PLANT-CODE-LIT&gt;
+      &lt;WERS-PLANT-CODE&gt;AN&lt;/WERS-PLANT-CODE&gt;
+      &lt;WERS-PLANT-DESC&gt;LOUISVILLE PLANT BUILD&lt;/WERS-PLANT-DESC&gt;
+   &lt;/WERS-PLANT-MSG&gt;
+   &lt;GOASIS-PLANT-MSG&gt;
+      &lt;PLANT-CODE-LIT&gt;GOASIS PLANT&lt;/PLANT-CODE-LIT&gt;
+      &lt;GOASIS-PLANT-CODE /&gt;
+      &lt;PLANT-DESC /&gt;
+   &lt;/GOASIS-PLANT-MSG&gt;
+   &lt;GOASIS-SAVESRC-MSG&gt;
+      &lt;GOASIS-SAVESRC-LIT&gt;SAVE SOURCE&lt;/GOASIS-SAVESRC-LIT&gt;
+      &lt;GOASIS-SAVESRC-CODE&gt;NA&lt;/GOASIS-SAVESRC-CODE&gt;
+   &lt;/GOASIS-SAVESRC-MSG&gt;
+   &lt;GOASIS-SELLING-MSG&gt;
+      &lt;GOASIS-SELLING-LIT&gt;SELLING COUNTRY&lt;/GOASIS-SELLING-LIT&gt;
+      &lt;GOASIS-SELLING-COUNTRY&gt;USA&lt;/GOASIS-SELLING-COUNTRY&gt;
+   &lt;/GOASIS-SELLING-MSG&gt;
+   &lt;GOASIS-WSI-MSG&gt;
+      &lt;GOASIS-WSI-LIT&gt;WSI&lt;/GOASIS-WSI-LIT&gt;
+      &lt;GOASIS-WSI-CODE /&gt;
+   &lt;/GOASIS-WSI-MSG&gt;
+   &lt;VEH-DESC-GOASIS&gt;2013 Escape&lt;/VEH-DESC-GOASIS&gt;
+   &lt;VEH-BODY-DESC-GOASIS&gt;5 Door&lt;/VEH-BODY-DESC-GOASIS&gt;
+   &lt;VEH-ENG-DESC-GOASIS&gt;2.0L EcoBoost (240PS) - MI4&lt;/VEH-ENG-DESC-GOASIS&gt;
+   &lt;VEH-TRANS-DESC-GOASIS&gt;6 Speed Auto Trans 6F35&lt;/VEH-TRANS-DESC-GOASIS&gt;
+   &lt;VEHICLE-DESCRIPTION&gt;
+      &lt;PRODUCT-TYPE&gt;T&lt;/PRODUCT-TYPE&gt;
+      &lt;MODEL-YEAR&gt;2013&lt;/MODEL-YEAR&gt;
+   &lt;/VEHICLE-DESCRIPTION&gt;
+   &lt;VEH-LINE FAMILY="VL" FEATURE="M2"&gt;Escape&lt;/VEH-LINE&gt;
+   &lt;VEH-SERIES FAMILY="SE" FEATURE="C6"&gt;BASE #4 SERIES&lt;/VEH-SERIES&gt;
+   &lt;BODY-CAB FAMILY="CA" FEATURE="WE"&gt;5 Door&lt;/BODY-CAB&gt;
+   &lt;ENGINE FAMILY="EN" FEATURE="TP"&gt;2.0L EcoBoost (240PS) - MI4&lt;/ENGINE&gt;
+   &lt;TRANSMISSION FAMILY="TR" FEATURE="W6" IND="A"&gt;6 Speed Auto Trans 6F35&lt;/TRANSMISSION&gt;
+   &lt;EMISSION FAMILY="DGA" FEATURE="AC" CD="KYL8"&gt;CALIFORNIA/GREEN STATE REQ.&lt;/EMISSION&gt;
+   &lt;DRIVE FAMILY="DR" FEATURE="E"&gt;4 WHL L/H PART TIME DRIVE&lt;/DRIVE&gt;
+   &lt;AXLE FAMILY="EGA" FEATURE="CE"&gt;3.07 FINAL DRIVE RATIO&lt;/AXLE&gt;
+   &lt;AIR-CONDITIONING FAMILY="AC" FEATURE=" G"&gt;DUAL ZONE AUTO TEMP CONTROL AC&lt;/AIR-CONDITIONING&gt;
+   &lt;TIRE FAMILY="D3I" FEATURE="C2"&gt;235/45 R19 95H&lt;/TIRE&gt;
+   &lt;FEATURES /&gt;
+   &lt;OWS-ORDER-DIV&gt;2&lt;/OWS-ORDER-DIV&gt;
+   &lt;OWS-SELL-DATE&gt;20120803&lt;/OWS-SELL-DATE&gt;
+   &lt;OWS-STRP-STATE&gt;MI&lt;/OWS-STRP-STATE&gt;
+   &lt;OWS-SELL-DEALER /&gt;
+   &lt;OWS-VEH-LINE&gt;TM2&lt;/OWS-VEH-LINE&gt;
+   &lt;OWS-VEH-ENG&gt;9&lt;/OWS-VEH-ENG&gt;
+   &lt;OWS-DEMO-DATE&gt;00000000&lt;/OWS-DEMO-DATE&gt;
+   &lt;OWS-ORDER-DATE&gt;20120215&lt;/OWS-ORDER-DATE&gt;
+   &lt;OWS-GVW-NBR&gt;04840&lt;/OWS-GVW-NBR&gt;
+   &lt;OWS-CAR-AREA-REG&gt;2&lt;/OWS-CAR-AREA-REG&gt;
+   &lt;OWS-HTRK-AREA-REG&gt;M&lt;/OWS-HTRK-AREA-REG&gt;
+   &lt;OWS-PUBLIC-SERVICE /&gt;
+   &lt;OWS-VECI-SUFFIX&gt;XGL&lt;/OWS-VECI-SUFFIX&gt;
+   &lt;OWS-DELIVERY-TYP /&gt;
+   &lt;OWS-CONVOY-ARV-DATE&gt;00000000&lt;/OWS-CONVOY-ARV-DATE&gt;
+   &lt;GOASIS-WERS-MULTI-BYTE&gt;
+      &lt;WERS-MB-VL&gt;Escape&lt;/WERS-MB-VL&gt;
+      &lt;WERS-MB-BY&gt;5 Door&lt;/WERS-MB-BY&gt;
+      &lt;WERS-MB-EN&gt;2.0L EcoBoost (240PS) - MI4&lt;/WERS-MB-EN&gt;
+      &lt;WERS-MB-TR&gt;6 Speed Auto Trans 6F35&lt;/WERS-MB-TR&gt;
+      &lt;WERS-MB-PA&gt;Tuxedo Black Metallic&lt;/WERS-MB-PA&gt;
+      &lt;WERS-MB-RA /&gt;
+      &lt;WERS-MB-AX&gt;3.07 Ratio&lt;/WERS-MB-AX&gt;
+      &lt;WERS-MB-WH&gt;8 x 19' Alloy Wheel&lt;/WERS-MB-WH&gt;
+      &lt;WERS-MB-TI&gt;235/45 R19 95H&lt;/WERS-MB-TI&gt;
+      &lt;WERS-MB-GV&gt;4840 LB. GVW&lt;/WERS-MB-GV&gt;
+   &lt;/GOASIS-WERS-MULTI-BYTE&gt;
+   &lt;VEH-BASIC-WARR-INFO&gt;
+      &lt;VEH-BASIC-WARR-LIT&gt;GENERAL WARRANTY INFORMATION&lt;/VEH-BASIC-WARR-LIT&gt;
+      &lt;START-DATE-LIT&gt;WARRANTY START DATE&lt;/START-DATE-LIT&gt;
+      &lt;VEH-WARR-START-DATE&gt;20120803&lt;/VEH-WARR-START-DATE&gt;
+      &lt;BUILD-DATE-LIT&gt;BUILD DATE&lt;/BUILD-DATE-LIT&gt;
+      &lt;VEH-BLD-DATE&gt;20120426&lt;/VEH-BLD-DATE&gt;
+      &lt;START-ODOM-LIT&gt;SALE MILEAGE&lt;/START-ODOM-LIT&gt;
+      &lt;VEH-WARR-START-MLG /&gt;
+   &lt;/VEH-BASIC-WARR-INFO&gt;
+   &lt;CAMPAIGN-MESSAGES&gt;
+      &lt;CAMP-HEADER-LIT&gt;OUTSTANDING FIELD SERVICE ACTIONS&lt;/CAMP-HEADER-LIT&gt;
+      &lt;VEH-CAMP-SYS-MSG&gt;NO CAMPAIGN MESSAGE(S) FOUND&lt;/VEH-CAMP-SYS-MSG&gt;
+   &lt;/CAMPAIGN-MESSAGES&gt;
+   &lt;ARN-MESSAGE&gt;
+      &lt;ARN-MESSAGE-LIT&gt;ACCURATE REPAIR NOTIFICATIONS&lt;/ARN-MESSAGE-LIT&gt;
+      &lt;ARN-MESSAGE-TEXT&gt;NO ARN MESSAGES FOUND&lt;/ARN-MESSAGE-TEXT&gt;
+   &lt;/ARN-MESSAGE&gt;
+   &lt;FOM-MESSAGE&gt;
+      &lt;FOM-HEADER-LIT&gt;CUSTOMER INFO FOR FOM&lt;/FOM-HEADER-LIT&gt;
+      &lt;FOM-SYS-MSG&gt;NO FOM INFO FOUND&lt;/FOM-SYS-MSG&gt;
+   &lt;/FOM-MESSAGE&gt;
+   &lt;VEH-WARRANTY-MESSAGES&gt;
+      &lt;VEH-WARR-HEADER-LIT&gt;NO WARNING MESSAGES FOUND FOR THIS VIN&lt;/VEH-WARR-HEADER-LIT&gt;
+   &lt;/VEH-WARRANTY-MESSAGES&gt;
+   &lt;VEH-WARRANTY-COVERAGE&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Bumper-to-Bumper&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;This is:&amp;lt;br/&amp;gt;a) test1.&amp;lt;/br&amp;gt; b) test2&amp;lt;/br&amp;gt;c) tada.&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;This is:&amp;lt;br/&amp;gt;a) test1.&amp;lt;/br&amp;gt; b) test2&amp;lt;/br&amp;gt;c) tada.&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Corrosion Perforation&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years/ Unlimited miles&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Powertrain&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years / 60,000 Miles (whichever occurs first)&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+      &lt;COVERAGE_RECORD&gt;
+         &lt;COVERAGE_TYPE&gt;Safety Restraint&lt;/COVERAGE_TYPE&gt;
+         &lt;COVERAGE_DESC&gt;5 years / 60,000 Miles (whichever occurs first)&lt;/COVERAGE_DESC&gt;
+         &lt;ADDITIONAL_INFO&gt;Test to See what happens for different TAGs...
+&amp;lt;br&amp;gt;This should be on a new line...
+&amp;lt;hr&amp;gt;a horizontal rule should have been displayed.
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+That should have been an ordered list&lt;/ADDITIONAL_INFO&gt;
+      &lt;/COVERAGE_RECORD&gt;
+   &lt;/VEH-WARRANTY-COVERAGE&gt;
+   &lt;VEH-ESP-INFO&gt;
+      &lt;EXT-SERV-PLAN-LIT&gt;EXTENDED COVERAGES&lt;/EXT-SERV-PLAN-LIT&gt;
+      &lt;VEH-ESP-DETAIL system="GOASIS"&gt;
+         &lt;VEH-ESP-DESC-MSG&gt;
+            &lt;VEH-ESP-CODE /&gt;
+            &lt;VEH-ESP-DESC&gt;ESPS FOUND NO INFORMATION&lt;/VEH-ESP-DESC&gt;
+         &lt;/VEH-ESP-DESC-MSG&gt;
+      &lt;/VEH-ESP-DETAIL&gt;
+   &lt;/VEH-ESP-INFO&gt;
+   &lt;SOLD-TO-FLEET-LIT&gt;SOLD TO FLEET&lt;/SOLD-TO-FLEET-LIT&gt;
+   &lt;SOLD-TO-FLEET&gt;NO&lt;/SOLD-TO-FLEET&gt;
+   &lt;RETAIL-SALE-TYPE-LIT&gt;RETAIL SALES TYPE&lt;/RETAIL-SALE-TYPE-LIT&gt;
+   &lt;RETAIL-SALE-TYPE&gt;L&lt;/RETAIL-SALE-TYPE&gt;
+   &lt;VEH-REP-HIST&gt;
+      &lt;VEH-REP-HIST-LIT&gt;WARRANTY REPAIR HISTORY&lt;/VEH-REP-HIST-LIT&gt;
+      &lt;VEH-REP-HIST-MSG&gt;NO RECENT REPAIR HISTORY ON VEHICLE&lt;/VEH-REP-HIST-MSG&gt;
+   &lt;/VEH-REP-HIST&gt;
+   &lt;SYMP-CODE-MESSAGES&gt;
+      &lt;VEH-SYMP-CODE-LIT&gt;SYMPTOM CODE INFORMATION&lt;/VEH-SYMP-CODE-LIT&gt;
+      &lt;SSM-HEADER-LIT&gt;SPECIAL SERVICE MESSAGES&lt;/SSM-HEADER-LIT&gt;
+      &lt;TSB-HEADER-LIT&gt;TECHNICAL SERVICE BULLETINS&lt;/TSB-HEADER-LIT&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;******&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;General Information&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;102000&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;BODY WINDOW/GLASS&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+         &lt;GSB-HEADER-LIT&gt;GENERAL SERVICE BULLETIN&lt;/GSB-HEADER-LIT&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;13-22222&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;F150 / Expedition King Ranch Seat Cover Damage Vs. Defect Determination&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;This General Service Bulliten is intended to be used to help dealers determine w&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;arranty / non-warranty claims for the King Ranch Seat Covers.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000091&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Multiple Vehicles- Glass Panel Build Date Decoder General Service Bulletin (GSB)&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;Multiple Vehicles - Use this document to assist your dealership in determining b&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;uild dates of glass panels.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;100000&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;BODY&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+         &lt;GSB-HEADER-LIT&gt;GENERAL SERVICE BULLETIN&lt;/GSB-HEADER-LIT&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000092&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Multiple Vehicles- Exterior Mirror General Service Bulletin (GSB)&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;Multiple Vehicles - Use this document to assist your dealership in determining w&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;arrantable/non warrantable decision regarding exterior mirrors.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000091&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Multiple Vehicles- Glass Panel Build Date Decoder General Service Bulletin (GSB)&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;Multiple Vehicles - Use this document to assist your dealership in determining b&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;uild dates of glass panels.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;200000&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;DESCRIPTION TEXT&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+         &lt;GSB-HEADER-LIT&gt;GENERAL SERVICE BULLETIN&lt;/GSB-HEADER-LIT&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000095&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Various Vehicles - Module Programming and Reprogramming Procedures&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;This General Service Bulletin will cover the proper tool usage along with what m&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;odule programming procedure to use and tips on how to perform these procedures.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+         &lt;GSB-MESSAGE&gt;
+            &lt;VEH-GSB-NBR-MSG&gt;
+               &lt;GSB-NUMBER&gt;G0000094&lt;/GSB-NUMBER&gt;
+            &lt;/VEH-GSB-NBR-MSG&gt;
+            &lt;GSB-MSG-TITLE&gt;
+               &lt;GSB-TITLE-LINE&gt;Multiple Vehicles - No PCM/Network Communication&lt;/GSB-TITLE-LINE&gt;
+            &lt;/GSB-MSG-TITLE&gt;
+            &lt;GSB-MSG-TEXT&gt;
+               &lt;GSB-TEXT-LINE&gt;Information in this bulletin is intended to assist in addressing CAN network “No&lt;/GSB-TEXT-LINE&gt;
+               &lt;GSB-TEXT-LINE&gt;Communication” related concerns.&lt;/GSB-TEXT-LINE&gt;
+            &lt;/GSB-MSG-TEXT&gt;
+         &lt;/GSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;203200&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;ELECTRICAL WIRING-GENERAL&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;VEH-SYMP-CODE&gt;
+         &lt;VEH-SYMP-CODE-NBR&gt;207000&lt;/VEH-SYMP-CODE-NBR&gt;
+         &lt;VEH-SYMP-CODE-DESC&gt;ELECTRICAL ENTERTAINMENT SYSTEMS&lt;/VEH-SYMP-CODE-DESC&gt;
+         &lt;SSM-MESSAGE&gt;
+            &lt;VEH-SSM-SYS-MSG&gt;THERE ARE NO SSMS FOR SYMPTOM ENTERED&lt;/VEH-SSM-SYS-MSG&gt;
+         &lt;/SSM-MESSAGE&gt;
+         &lt;TSB-MESSAGE&gt;
+            &lt;VEH-TSB-SYS-MSG&gt;THERE ARE NO TSBS FOR SYMPTOM ENTERED&lt;/VEH-TSB-SYS-MSG&gt;
+         &lt;/TSB-MESSAGE&gt;
+      &lt;/VEH-SYMP-CODE&gt;
+      &lt;CONTACT-ID-MSG&gt;*512 461 975* TECH HOTLINE CONTACT ID EXPIRES IN 5 DAYS FOR                   1FMCU9J95DUA04123&lt;/CONTACT-ID-MSG&gt;
+   &lt;/SYMP-CODE-MESSAGES&gt;
+   &lt;END-OF-INFO-LIT&gt;END OF OASIS REPORT FOR&lt;/END-OF-INFO-LIT&gt;
+&lt;/GOASIS&gt;</value>
+  </data>
+</root>

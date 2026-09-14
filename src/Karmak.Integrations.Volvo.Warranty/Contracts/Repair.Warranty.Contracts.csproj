@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Elk.Repair.Warranty.Contracts</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="9.0.0" />
+      <PackageReference Include="Core.Framework.Communications.Common" Version="5.7.0.532" />
+      <PackageReference Include="Karmak.ELK.Framework.Services" Version="5.7.0.532" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core.Framework.Fusion\Core.Framework.Fusion.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands\" />
+    </ItemGroup>
+
+</Project>

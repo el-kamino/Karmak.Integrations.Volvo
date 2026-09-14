@@ -1,0 +1,402 @@
+using Karmak.Integrations.Volvo.Oasis.Models;
+using Karmak.Integrations.Volvo.Oasis.Models.Xml;
+
+namespace Karmak.Integrations.Volvo.Oasis.Services
+{
+    public class NullOasisClient : IOasisClient
+    {
+        public NullOasisClient()
+        {
+        }
+
+        public Task<OasisResponseRest> SendAsync(string oasisUri, OasisRequest request, string karmakAccountNumber = null)
+        {
+            return Task.FromResult(new OasisResponseRest
+            {
+                Payload = SerializationUtils.DeserializeXmlToJson(MOCK_OASIS_RESPONSE)
+            });
+        }
+
+        private const string MOCK_OASIS_RESPONSE =
+            @"<?xml version='1.0' encoding='UTF-8'?>
+<GOASIS xmlns='http://volvo.com/goasis'>
+   <GOASIS-RESULT-LIT>FAKE FAKE FAKE FAKE OASIS RESULT:</GOASIS-RESULT-LIT>
+   <DLR-LANG-RESP>
+      <RET-LANG-CODE>EN</RET-LANG-CODE>
+      <RET-LANG-DESC>ENGLISH</RET-LANG-DESC>
+      <PREF-LANG-CODE>EN</PREF-LANG-CODE>
+      <OPT-LANG-CODE-1>ES</OPT-LANG-CODE-1>
+      <OPT-LANG-CODE-2>FR</OPT-LANG-CODE-2>
+      <LANG-RESP-MSG />
+   </DLR-LANG-RESP>
+   <VEHICLE-INFO-LIT>Vehicle Information</VEHICLE-INFO-LIT>
+   <VEHICLE-INQUIRY>
+      <VEH-ID-NBR>1FMCU9J95DUA04123</VEH-ID-NBR>
+      <VEH-INQ-DATE>20191025</VEH-INQ-DATE>
+      <VEH-INQ-TIME>124619</VEH-INQ-TIME>
+   </VEHICLE-INQUIRY>
+   <VEH-BODY-DESC>
+      <VEH-DESC-LIT>VEHICLE DESCRIPTION</VEH-DESC-LIT>
+      <VEH-DESC>2013 Escape</VEH-DESC>
+      <VEH-BODY-LIT>BODY STYLE</VEH-BODY-LIT>
+      <VEH-BODY>5 Door</VEH-BODY>
+   </VEH-BODY-DESC>
+   <VEH-OPT-DESC>
+      <VEH-ENG-LIT>ENGINE</VEH-ENG-LIT>
+      <VEH-ENG-DESC>2.0L EcoBoost (240PS) - MI4</VEH-ENG-DESC>
+      <VEH-ENG-CALIB>DM21A20A</VEH-ENG-CALIB>
+      <VEH-ENG-CALIB-LIT>ENGINE CALIBRATION</VEH-ENG-CALIB-LIT>
+      <VEH-TRANS-LIT>TRANSMISSION</VEH-TRANS-LIT>
+      <VEH-TRANS-DESC>6 Speed Auto Trans 6F35</VEH-TRANS-DESC>
+      <VEH-AXLE-LIT>AXLE CODE</VEH-AXLE-LIT>
+      <VEH-AXLE-CODE>3A</VEH-AXLE-CODE>
+   </VEH-OPT-DESC>
+   <AXLE-RATIO-MSG>
+      <AXLE-RATIO-LIT>AXLE RATIO</AXLE-RATIO-LIT>
+      <AXLE-RATIO-DESC>3.07 FINAL DRIVE RATIO</AXLE-RATIO-DESC>
+   </AXLE-RATIO-MSG>
+   <WHEEL-BASE-MSG>
+      <WHEEL-BASE-LIT>WHEEL BASE</WHEEL-BASE-LIT>
+      <WHEEL-BASE-DESC />
+   </WHEEL-BASE-MSG>
+   <WHEELSIZE-MSG>
+      <WHEELSIZE-LIT>WHEEL SIZE</WHEELSIZE-LIT>
+      <WHEELSIZE-DESC>8X19 ALLOY LR1</WHEELSIZE-DESC>
+   </WHEELSIZE-MSG>
+   <FRONT-TIRE-MSG>
+      <FRONT-TIRE-LIT>FRONT TIRE</FRONT-TIRE-LIT>
+      <FRONT-TIRE-DESC>235/45 R19 95H</FRONT-TIRE-DESC>
+   </FRONT-TIRE-MSG>
+   <PAINT-DESC-MSG>
+      <PAINT-LIT>PAINT COLOR</PAINT-LIT>
+      <PAINT-DESC>TUXEDO BLACK METALLIC</PAINT-DESC>
+      <PAINTCODE-LIT>PAINT CODE</PAINTCODE-LIT>
+      <PAINTCODE>UH</PAINTCODE>
+   </PAINT-DESC-MSG>
+   <RADIO-MSG>
+      <RADIO-LIT>RADIO</RADIO-LIT>
+      <RADIO-DESC />
+   </RADIO-MSG>
+   <GVW-MSG>
+      <GVW-LIT>GROSS VEHICLE WEIGHT</GVW-LIT>
+      <GVW-DESC>4840 LB. GVW</GVW-DESC>
+   </GVW-MSG>
+   <WERS-VLINE-MSG>
+      <WERS-VLINE-CODE-LIT>WERS VEHICLE LINE</WERS-VLINE-CODE-LIT>
+      <WERS-VLINE-CODE>TM2</WERS-VLINE-CODE>
+      <WERS-VLINE-DESC>Escape</WERS-VLINE-DESC>
+   </WERS-VLINE-MSG>
+   <GOASIS-VLINE-MSG>
+      <VLINE-CODE-LIT>GOASIS VEHICLE LINE</VLINE-CODE-LIT>
+      <GOASIS-VLINE-CODE />
+   </GOASIS-VLINE-MSG>
+   <LOCAL-BODYSTYLE-MSG>
+      <BSTYLE-CODE-LIT>SAVE LOCAL BODYSTYLE</BSTYLE-CODE-LIT>
+      <LOCAL-BODYSTYLE-CODE>U9J</LOCAL-BODYSTYLE-CODE>
+   </LOCAL-BODYSTYLE-MSG>
+   <WERS-BODYSTYLE-MSG>
+      <WBSTYLE-CODE-LIT>WERS BODYSTYLE</WBSTYLE-CODE-LIT>
+      <WERS-BODYSTYLE-CODE>WE</WERS-BODYSTYLE-CODE>
+      <WBSTYLE-DESC>5 Door</WBSTYLE-DESC>
+   </WERS-BODYSTYLE-MSG>
+   <GOASIS-BODYSTYLE-MSG>
+      <GBSTYLE-CODE-LIT>GOASIS BODYSTYLE</GBSTYLE-CODE-LIT>
+      <GOASIS-BODYSTYLE-CODE />
+   </GOASIS-BODYSTYLE-MSG>
+   <WERS-PLANT-MSG>
+      <WERS-PLANT-CODE-LIT>WERS PLANT</WERS-PLANT-CODE-LIT>
+      <WERS-PLANT-CODE>AN</WERS-PLANT-CODE>
+      <WERS-PLANT-DESC>LOUISVILLE PLANT BUILD</WERS-PLANT-DESC>
+   </WERS-PLANT-MSG>
+   <GOASIS-PLANT-MSG>
+      <PLANT-CODE-LIT>GOASIS PLANT</PLANT-CODE-LIT>
+      <GOASIS-PLANT-CODE />
+      <PLANT-DESC />
+   </GOASIS-PLANT-MSG>
+   <GOASIS-SAVESRC-MSG>
+      <GOASIS-SAVESRC-LIT>SAVE SOURCE</GOASIS-SAVESRC-LIT>
+      <GOASIS-SAVESRC-CODE>NA</GOASIS-SAVESRC-CODE>
+   </GOASIS-SAVESRC-MSG>
+   <GOASIS-SELLING-MSG>
+      <GOASIS-SELLING-LIT>SELLING COUNTRY</GOASIS-SELLING-LIT>
+      <GOASIS-SELLING-COUNTRY>USA</GOASIS-SELLING-COUNTRY>
+   </GOASIS-SELLING-MSG>
+   <GOASIS-WSI-MSG>
+      <GOASIS-WSI-LIT>WSI</GOASIS-WSI-LIT>
+      <GOASIS-WSI-CODE />
+   </GOASIS-WSI-MSG>
+   <VEH-DESC-GOASIS>2013 Escape</VEH-DESC-GOASIS>
+   <VEH-BODY-DESC-GOASIS>5 Door</VEH-BODY-DESC-GOASIS>
+   <VEH-ENG-DESC-GOASIS>2.0L EcoBoost (240PS) - MI4</VEH-ENG-DESC-GOASIS>
+   <VEH-TRANS-DESC-GOASIS>6 Speed Auto Trans 6F35</VEH-TRANS-DESC-GOASIS>
+   <VEHICLE-DESCRIPTION>
+      <PRODUCT-TYPE>T</PRODUCT-TYPE>
+      <MODEL-YEAR>2013</MODEL-YEAR>
+   </VEHICLE-DESCRIPTION>
+   <VEH-LINE FAMILY='VL' FEATURE='M2'>Escape</VEH-LINE>
+   <VEH-SERIES FAMILY='SE' FEATURE='C6'>BASE #4 SERIES</VEH-SERIES>
+   <BODY-CAB FAMILY='CA' FEATURE='WE'>5 Door</BODY-CAB>
+   <ENGINE FAMILY='EN' FEATURE='TP'>2.0L EcoBoost (240PS) - MI4</ENGINE>
+   <TRANSMISSION FAMILY='TR' FEATURE='W6' IND='A'>6 Speed Auto Trans 6F35</TRANSMISSION>
+   <EMISSION FAMILY='DGA' FEATURE='AC' CD='KYL8'>CALIFORNIA/GREEN STATE REQ.</EMISSION>
+   <DRIVE FAMILY='DR' FEATURE='E'>4 WHL L/H PART TIME DRIVE</DRIVE>
+   <AXLE FAMILY='EGA' FEATURE='CE'>3.07 FINAL DRIVE RATIO</AXLE>
+   <AIR-CONDITIONING FAMILY='AC' FEATURE=' G'>DUAL ZONE AUTO TEMP CONTROL AC</AIR-CONDITIONING>
+   <TIRE FAMILY='D3I' FEATURE='C2'>235/45 R19 95H</TIRE>
+   <FEATURES />
+   <OWS-ORDER-DIV>2</OWS-ORDER-DIV>
+   <OWS-SELL-DATE>20120803</OWS-SELL-DATE>
+   <OWS-STRP-STATE>MI</OWS-STRP-STATE>
+   <OWS-SELL-DEALER />
+   <OWS-VEH-LINE>TM2</OWS-VEH-LINE>
+   <OWS-VEH-ENG>9</OWS-VEH-ENG>
+   <OWS-DEMO-DATE>00000000</OWS-DEMO-DATE>
+   <OWS-ORDER-DATE>20120215</OWS-ORDER-DATE>
+   <OWS-GVW-NBR>04840</OWS-GVW-NBR>
+   <OWS-CAR-AREA-REG>2</OWS-CAR-AREA-REG>
+   <OWS-HTRK-AREA-REG>M</OWS-HTRK-AREA-REG>
+   <OWS-PUBLIC-SERVICE />
+   <OWS-VECI-SUFFIX>XGL</OWS-VECI-SUFFIX>
+   <OWS-DELIVERY-TYP />
+   <OWS-CONVOY-ARV-DATE>00000000</OWS-CONVOY-ARV-DATE>
+   <GOASIS-WERS-MULTI-BYTE>
+      <WERS-MB-VL>Escape</WERS-MB-VL>
+      <WERS-MB-BY>5 Door</WERS-MB-BY>
+      <WERS-MB-EN>2.0L EcoBoost (240PS) - MI4</WERS-MB-EN>
+      <WERS-MB-TR>6 Speed Auto Trans 6F35</WERS-MB-TR>
+      <WERS-MB-PA>Tuxedo Black Metallic</WERS-MB-PA>
+      <WERS-MB-RA />
+      <WERS-MB-AX>3.07 Ratio</WERS-MB-AX>
+      <WERS-MB-WH>8 x 19' Alloy Wheel</WERS-MB-WH>
+      <WERS-MB-TI>235/45 R19 95H</WERS-MB-TI>
+      <WERS-MB-GV>4840 LB. GVW</WERS-MB-GV>
+   </GOASIS-WERS-MULTI-BYTE>
+   <VEH-BASIC-WARR-INFO>
+      <VEH-BASIC-WARR-LIT>GENERAL WARRANTY INFORMATION</VEH-BASIC-WARR-LIT>
+      <START-DATE-LIT>WARRANTY START DATE</START-DATE-LIT>
+      <VEH-WARR-START-DATE>20120803</VEH-WARR-START-DATE>
+      <BUILD-DATE-LIT>BUILD DATE</BUILD-DATE-LIT>
+      <VEH-BLD-DATE>20120426</VEH-BLD-DATE>
+      <START-ODOM-LIT>SALE MILEAGE</START-ODOM-LIT>
+      <VEH-WARR-START-MLG />
+   </VEH-BASIC-WARR-INFO>
+   <CAMPAIGN-MESSAGES>
+      <CAMP-HEADER-LIT>OUTSTANDING FIELD SERVICE ACTIONS</CAMP-HEADER-LIT>
+      <VEH-CAMP-SYS-MSG>NO CAMPAIGN MESSAGE(S) FOUND</VEH-CAMP-SYS-MSG>
+   </CAMPAIGN-MESSAGES>
+   <ARN-MESSAGE>
+      <ARN-MESSAGE-LIT>ACCURATE REPAIR NOTIFICATIONS</ARN-MESSAGE-LIT>
+      <ARN-MESSAGE-TEXT>NO ARN MESSAGES FOUND</ARN-MESSAGE-TEXT>
+   </ARN-MESSAGE>
+   <FOM-MESSAGE>
+      <FOM-HEADER-LIT>CUSTOMER INFO FOR FOM</FOM-HEADER-LIT>
+      <FOM-SYS-MSG>NO FOM INFO FOUND</FOM-SYS-MSG>
+   </FOM-MESSAGE>
+   <VEH-WARRANTY-MESSAGES>
+      <VEH-WARR-HEADER-LIT>NO WARNING MESSAGES FOUND FOR THIS VIN</VEH-WARR-HEADER-LIT>
+   </VEH-WARRANTY-MESSAGES>
+   <VEH-WARRANTY-COVERAGE>
+      <COVERAGE_RECORD>
+         <COVERAGE_TYPE>Bumper-to-Bumper</COVERAGE_TYPE>
+         <COVERAGE_DESC>This is:&lt;br/&gt;a) test1.&lt;/br&gt; b) test2&lt;/br&gt;c) tada.</COVERAGE_DESC>
+         <ADDITIONAL_INFO>This is:&lt;br/&gt;a) test1.&lt;/br&gt; b) test2&lt;/br&gt;c) tada.</ADDITIONAL_INFO>
+      </COVERAGE_RECORD>
+      <COVERAGE_RECORD>
+         <COVERAGE_TYPE>Corrosion Perforation</COVERAGE_TYPE>
+         <COVERAGE_DESC>5 years/ Unlimited miles</COVERAGE_DESC>
+         <ADDITIONAL_INFO>Test to See what happens for different TAGs...
+&lt;br&gt;This should be on a new line...
+&lt;hr&gt;a horizontal rule should have been displayed.
+&lt;ol&gt;
+&lt;li&gt;item1&lt;/li&gt;
+&lt;li&gt;item2&lt;/li&gt;
+&lt;/ol&gt;
+That should have been an ordered list</ADDITIONAL_INFO>
+      </COVERAGE_RECORD>
+      <COVERAGE_RECORD>
+         <COVERAGE_TYPE>Powertrain</COVERAGE_TYPE>
+         <COVERAGE_DESC>5 years / 60,000 Miles (whichever occurs first)</COVERAGE_DESC>
+         <ADDITIONAL_INFO>Test to See what happens for different TAGs...
+&lt;br&gt;This should be on a new line...
+&lt;hr&gt;a horizontal rule should have been displayed.
+&lt;ol&gt;
+&lt;li&gt;item1&lt;/li&gt;
+&lt;li&gt;item2&lt;/li&gt;
+&lt;/ol&gt;
+That should have been an ordered list</ADDITIONAL_INFO>
+      </COVERAGE_RECORD>
+      <COVERAGE_RECORD>
+         <COVERAGE_TYPE>Safety Restraint</COVERAGE_TYPE>
+         <COVERAGE_DESC>5 years / 60,000 Miles (whichever occurs first)</COVERAGE_DESC>
+         <ADDITIONAL_INFO>Test to See what happens for different TAGs...
+&lt;br&gt;This should be on a new line...
+&lt;hr&gt;a horizontal rule should have been displayed.
+&lt;ol&gt;
+&lt;li&gt;item1&lt;/li&gt;
+&lt;li&gt;item2&lt;/li&gt;
+&lt;/ol&gt;
+That should have been an ordered list</ADDITIONAL_INFO>
+      </COVERAGE_RECORD>
+   </VEH-WARRANTY-COVERAGE>
+   <VEH-ESP-INFO>
+      <EXT-SERV-PLAN-LIT>EXTENDED COVERAGES</EXT-SERV-PLAN-LIT>
+      <VEH-ESP-DETAIL system='GOASIS'>
+         <VEH-ESP-DESC-MSG>
+            <VEH-ESP-CODE />
+            <VEH-ESP-DESC>ESPS FOUND NO INFORMATION</VEH-ESP-DESC>
+         </VEH-ESP-DESC-MSG>
+      </VEH-ESP-DETAIL>
+   </VEH-ESP-INFO>
+   <SOLD-TO-FLEET-LIT>SOLD TO FLEET</SOLD-TO-FLEET-LIT>
+   <SOLD-TO-FLEET>NO</SOLD-TO-FLEET>
+   <RETAIL-SALE-TYPE-LIT>RETAIL SALES TYPE</RETAIL-SALE-TYPE-LIT>
+   <RETAIL-SALE-TYPE>L</RETAIL-SALE-TYPE>
+   <VEH-REP-HIST>
+      <VEH-REP-HIST-LIT>WARRANTY REPAIR HISTORY</VEH-REP-HIST-LIT>
+      <VEH-REP-HIST-MSG>NO RECENT REPAIR HISTORY ON VEHICLE</VEH-REP-HIST-MSG>
+   </VEH-REP-HIST>
+   <SYMP-CODE-MESSAGES>
+      <VEH-SYMP-CODE-LIT>SYMPTOM CODE INFORMATION</VEH-SYMP-CODE-LIT>
+      <SSM-HEADER-LIT>SPECIAL SERVICE MESSAGES</SSM-HEADER-LIT>
+      <TSB-HEADER-LIT>TECHNICAL SERVICE BULLETINS</TSB-HEADER-LIT>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>******</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>General Information</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>102000</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>BODY WINDOW/GLASS</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+         <GSB-HEADER-LIT>GENERAL SERVICE BULLETIN</GSB-HEADER-LIT>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>13-22222</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>F150 / Expedition King Ranch Seat Cover Damage Vs. Defect Determination</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>This General Service Bulliten is intended to be used to help dealers determine w</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>arranty / non-warranty claims for the King Ranch Seat Covers.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>G0000091</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>Multiple Vehicles- Glass Panel Build Date Decoder General Service Bulletin (GSB)</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>Multiple Vehicles - Use this document to assist your dealership in determining b</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>uild dates of glass panels.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>100000</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>BODY</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+         <GSB-HEADER-LIT>GENERAL SERVICE BULLETIN</GSB-HEADER-LIT>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>G0000092</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>Multiple Vehicles- Exterior Mirror General Service Bulletin (GSB)</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>Multiple Vehicles - Use this document to assist your dealership in determining w</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>arrantable/non warrantable decision regarding exterior mirrors.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>G0000091</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>Multiple Vehicles- Glass Panel Build Date Decoder General Service Bulletin (GSB)</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>Multiple Vehicles - Use this document to assist your dealership in determining b</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>uild dates of glass panels.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>200000</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>DESCRIPTION TEXT</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+         <GSB-HEADER-LIT>GENERAL SERVICE BULLETIN</GSB-HEADER-LIT>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>G0000095</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>Various Vehicles - Module Programming and Reprogramming Procedures</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>This General Service Bulletin will cover the proper tool usage along with what m</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>odule programming procedure to use and tips on how to perform these procedures.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+         <GSB-MESSAGE>
+            <VEH-GSB-NBR-MSG>
+               <GSB-NUMBER>G0000094</GSB-NUMBER>
+            </VEH-GSB-NBR-MSG>
+            <GSB-MSG-TITLE>
+               <GSB-TITLE-LINE>Multiple Vehicles - No PCM/Network Communication</GSB-TITLE-LINE>
+            </GSB-MSG-TITLE>
+            <GSB-MSG-TEXT>
+               <GSB-TEXT-LINE>Information in this bulletin is intended to assist in addressing CAN network “No</GSB-TEXT-LINE>
+               <GSB-TEXT-LINE>Communication” related concerns.</GSB-TEXT-LINE>
+            </GSB-MSG-TEXT>
+         </GSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>203200</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>ELECTRICAL WIRING-GENERAL</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <VEH-SYMP-CODE>
+         <VEH-SYMP-CODE-NBR>207000</VEH-SYMP-CODE-NBR>
+         <VEH-SYMP-CODE-DESC>ELECTRICAL ENTERTAINMENT SYSTEMS</VEH-SYMP-CODE-DESC>
+         <SSM-MESSAGE>
+            <VEH-SSM-SYS-MSG>THERE ARE NO SSMS FOR SYMPTOM ENTERED</VEH-SSM-SYS-MSG>
+         </SSM-MESSAGE>
+         <TSB-MESSAGE>
+            <VEH-TSB-SYS-MSG>THERE ARE NO TSBS FOR SYMPTOM ENTERED</VEH-TSB-SYS-MSG>
+         </TSB-MESSAGE>
+      </VEH-SYMP-CODE>
+      <CONTACT-ID-MSG>*512 461 975* TECH HOTLINE CONTACT ID EXPIRES IN 5 DAYS FOR                   1FMCU9J95DUA04123</CONTACT-ID-MSG>
+   </SYMP-CODE-MESSAGES>
+   <END-OF-INFO-LIT>END OF OASIS REPORT FOR</END-OF-INFO-LIT>
+</GOASIS>";
+    }
+}

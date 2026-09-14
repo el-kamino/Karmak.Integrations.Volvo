@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Data.Tables" Version="12.12.0" />
+        <PackageReference Include="FluentValidation" Version="12.0.0" />
+        <PackageReference Include="MassTransit" Version="8.5.2" />
+        <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.5.2" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.2" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Karmak.Integrations.Volvo.Common\Karmak.Integrations.Volvo.Common.csproj" />
+        <ProjectReference Include="..\Karmak.Integrations.Volvo.Fusion\Karmak.Integrations.Volvo.Fusion.csproj" />
+        <ProjectReference Include="..\Karmak.Integrations.Volvo.React\Karmak.Integrations.Volvo.React.csproj" />
+        <ProjectReference Include="..\Karmak.Integrations.Volvo.React.Transport\Karmak.Integrations.Volvo.React.Transport.csproj" />
+    </ItemGroup>
+
+</Project>

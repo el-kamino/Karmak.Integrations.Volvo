@@ -1,0 +1,113 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+      <wsa:Action>http://www.starstandards.org/webservices/2005/10/transport/bindings/starTransportPortTypes/ProcessMessageResponse</wsa:Action>
+      <wsa:RelatesTo>XXXXXXXXXXXXXXX</wsa:RelatesTo>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ProcessMessageResponse xmlns="http://www.starstandards.org/webservices/2005/10/transport">
+         <payload>
+            <tran:content id="Content0" xmlns:tran="http://www.starstandards.org/webservices/2005/10/transport" xmlns:ows="urn:volvo/WarrantyClaim/Extended/ServiceProcessingAdvisory/v1.0" xmlns:star="http://www.starstandard.org/STAR/5" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+               <star:ShowServiceProcessingAdvisory releaseID="5.2.4" systemEnvironmentCode="Test" languageCode="en-US">
+                  <star:ApplicationArea>
+                     <star:Sender>
+                        <star:TaskID>ShowServiceProcessingAdvisory</star:TaskID>
+                        <star:ConfirmationCode>Never</star:ConfirmationCode>
+                        <star:CreatorNameCode>FM</star:CreatorNameCode>
+                        <star:SenderNameCode>FM</star:SenderNameCode>
+                        <star:LanguageCode>en-US</star:LanguageCode>
+                        <star:ServiceID>OWS Claim Reconciliation</star:ServiceID>
+                     </star:Sender>
+                     <star:CreationDateTime>2001-12-17T09:30:47Z</star:CreationDateTime>
+                     <star:Destination>
+                        <star:DealerNumberID>02198!</star:DealerNumberID>
+                        <star:DealerTargetCountry>US</star:DealerTargetCountry>
+                     </star:Destination>
+                  </star:ApplicationArea>
+                  <star:ShowServiceProcessingAdvisoryDataArea>
+                     <star:Show/>
+                     <star:ServiceProcessingAdvisory>
+                        <ows:ServiceProcessingAdvisoryHeaderExtended>
+                           <star:DocumentDateTime>2001-12-17T09:30:47Z</star:DocumentDateTime>
+                           <star:DocumentIdentificationGroup>
+                              <star:DocumentIdentification>
+                                 <star:DocumentID>Default</star:DocumentID>
+                              </star:DocumentIdentification>
+                           </star:DocumentIdentificationGroup>
+                           <!--Extended field-->
+                           <star:PaymentCycleEndDate>2010-04-04</star:PaymentCycleEndDate>
+                           <star:DealerParty>
+                              <star:PartyID>02198!</star:PartyID>
+                              <star:LocationID>USA</star:LocationID>
+                           </star:DealerParty>
+                           <ows:DispositionPaymentsExtended>
+                              <star:ProcessDate>2010-04-01</star:ProcessDate>
+                              <star:RepairOrderReconciliation>
+                                 <star:DocumentID>565637</star:DocumentID>
+                                 <ows:JobReconciliationExtended>
+                                    <star:JobNumberString>A</star:JobNumberString>
+                                    <star:ApprovedAmount currencyID="USD">576.32</star:ApprovedAmount>
+                                    <star:LaborAmount currencyID="USD">226.32</star:LaborAmount>
+                                    <star:PartsAmount currencyID="USD">300</star:PartsAmount>
+                                    <star:OtherAmount currencyID="USD">30</star:OtherAmount>
+                                    <star:Tax>
+                                       <star:TaxTypeCode>N/A</star:TaxTypeCode>
+                                       <star:TaxDescription>Claim Tax Total Amount</star:TaxDescription>
+                                       <star:TaxAmount currencyID="USD">25.00</star:TaxAmount>
+                                    </star:Tax>
+                                    <star:Tax>
+                                       <star:TaxTypeCode>N/A</star:TaxTypeCode>
+                                       <star:TaxDescription>Tax Type 1</star:TaxDescription>
+                                       <star:TaxAmount currencyID="USD">25.00</star:TaxAmount>
+                                       <star:TaxRatePercent>5</star:TaxRatePercent>
+                                    </star:Tax>
+                                    <star:Tax>
+                                       <star:TaxTypeCode>N/A</star:TaxTypeCode>
+                                       <star:TaxDescription>Tax Type 2</star:TaxDescription>
+                                       <star:TaxAmount currencyID="USD">25.00</star:TaxAmount>
+                                    </star:Tax>
+                                    <ows:DispositionReasonExtended>
+                                       <ows:ExceptionCodes>
+                                          <ows:Code>C</ows:Code>
+                                          <ows:ExceptionText>DEALER PARTICIPATION  -100</ows:ExceptionText>
+                                       </ows:ExceptionCodes>
+                                    </ows:DispositionReasonExtended>
+                                    <star:ClaimTypeString>A1</star:ClaimTypeString>
+                                    <ows:PaymentAdviceDate>1967-08-13</ows:PaymentAdviceDate>
+                                    <ows:PaymentAdviceNumber>23</ows:PaymentAdviceNumber>
+                                    <ows:ClaimStatusCode>AE</ows:ClaimStatusCode>
+                                    <ows:ClaimOrigin>D</ows:ClaimOrigin>
+                                    <ows:ServiceParts>
+                                       <ows:ItemIdentification>CXO!5W20!BSP1</ows:ItemIdentification>
+                                       <ows:PartsReturnDestinationCode>3</ows:PartsReturnDestinationCode>
+                                       <ows:ItemQuantity>4</ows:ItemQuantity>
+                                       <ows:PartAmount currencyID="USD">33</ows:PartAmount>
+                                    </ows:ServiceParts>
+                                    <ows:ServiceLabor>
+                                       <ows:LaborOperationID>7000A</ows:LaborOperationID>
+                                       <ows:LaborActualHoursNumeric>10</ows:LaborActualHoursNumeric>
+                                       <ows:LaborAmount currencyID="USD">324.25</ows:LaborAmount>
+                                    </ows:ServiceLabor>
+                                    <ows:ServiceComponents>
+                                       <ows:ComponentTypeCode>GST</ows:ComponentTypeCode>
+                                       <ows:ServiceComponentAmount currencyID="USD">200.00</ows:ServiceComponentAmount>
+                                    </ows:ServiceComponents>
+                                 </ows:JobReconciliationExtended>
+                                 <star:WarrantyClaimReconciliation>
+                                    <star:WarrantyClaimDeductible>
+                                       <star:DeductibleTypeString>DEDUCTIBLE</star:DeductibleTypeString>
+                                       <star:DeductibleAmount currencyID="USD">-150.00</star:DeductibleAmount>
+                                    </star:WarrantyClaimDeductible>
+                                 </star:WarrantyClaimReconciliation>
+                              </star:RepairOrderReconciliation>
+                              <ows:ESPRegistrationAmount currencyID="USD">1000.00</ows:ESPRegistrationAmount>
+                           </ows:DispositionPaymentsExtended>
+                           <ows:PaymentCycleStartDate>1967-08-13</ows:PaymentCycleStartDate>
+                        </ows:ServiceProcessingAdvisoryHeaderExtended>
+                     </star:ServiceProcessingAdvisory>
+                  </star:ShowServiceProcessingAdvisoryDataArea>
+               </star:ShowServiceProcessingAdvisory>
+            </tran:content>
+         </payload>
+      </ProcessMessageResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

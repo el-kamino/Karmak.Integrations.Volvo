@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MassTransit" Version="8.5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Karmak.Integrations.Volvo.Common\Karmak.Integrations.Volvo.Common.csproj" />
+    <ProjectReference Include="..\Karmak.Integrations.Volvo.Dcds\Karmak.Integrations.Volvo.Dcds.csproj" />
+    <ProjectReference Include="..\Karmak.Integrations.Volvo.React.Transport\Karmak.Integrations.Volvo.React.Transport.csproj" />
+    <ProjectReference Include="..\Karmak.Integrations.Volvo.React\Karmak.Integrations.Volvo.React.csproj" />
+  </ItemGroup>
+
+</Project>
