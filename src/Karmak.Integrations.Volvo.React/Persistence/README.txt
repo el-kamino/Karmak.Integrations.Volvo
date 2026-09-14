@@ -1,0 +1,3 @@
+﻿The code in the React and RepairOrderHistory folders was developed separately and used to live in different services.  To avoid issues when migrating
+from the elk framework, I have not tried to consolidate as there are some slight differences between the two (e.g. one returns null for 404 not found, other
+propagates the exception, etc).  At some point I would like to migrate off cosmos so this code may go away eventually.
