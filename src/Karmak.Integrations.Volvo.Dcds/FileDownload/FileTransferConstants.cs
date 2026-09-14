@@ -1,4 +1,4 @@
-namespace Karmak.Integrations.Ford.Dcds.FileDownload
+namespace Karmak.Integrations.Volvo.Dcds.FileDownload
 {
     public static class FileTransferConstants
     {
@@ -8,7 +8,7 @@ namespace Karmak.Integrations.Ford.Dcds.FileDownload
             {"084", "Daily Vehicle Status Report"},
             {"093", "Car Status and Summary Counts"},
             {"122", "Projected Vehicle Flow Report"},
-            {"133", "Sales Analysis And Reporting / DSE Transaction List - Ford"},
+            {"133", "Sales Analysis And Reporting / DSE Transaction List - Volvo"},
             {"137", "Parts Entry and Return Register"},
             {"138", "ACES II Repair Register - Monthly"},
             {"139", "Direct Order Receipt Acknowledgement"},
@@ -25,7 +25,7 @@ namespace Karmak.Integrations.Ford.Dcds.FileDownload
             {"463", "Warranty And Service Systems / ACES II Supporting Documentation Summary"},
             {"466", "Weekly EFT Settlement Statement"},
             {"471", "Warranty Account Receivable Detail from ACES II"},
-            {"472", "ESPS – Daily Transactions"},
+            {"472", "ESPS â€“ Daily Transactions"},
             {"474", "Packing Slip Receipt"},
             {"476", "Confirmed Return Line Info"},
             {"551", "Proactive Activity Report (MOORS)"},
@@ -33,7 +33,7 @@ namespace Karmak.Integrations.Ford.Dcds.FileDownload
             {"667", "Centralized Invoicing - Dealer Invoice / COV Requests"},
             {"801", "Part Packing Slip"},
             {"903", "CDS Systems Coordinator Message"},
-            {"906", "Ford Credit Dealer EFT Detail"},
+            {"906", "Volvo Credit Dealer EFT Detail"},
             {"909", "Standardized Training And Resource System"},
             {"921", "Dealer Bulletins and Training"}
         };
